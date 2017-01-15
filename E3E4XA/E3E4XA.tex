@@ -1,0 +1,120 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{E-3 \& E-4 \hfill Math 2210Q} 
+
+  	
+  
+  	%-----------------------------------------------------------------------------	
+ 
+  	In questions 1-4, state whether the matrices are in echelon form, reduced row echelon form (RREF) or neither form.
+  	 	\begin{question}
+  
+  	$	\begin{bmatrix}
+  			0&2\\
+  			0&0\\
+  			0&0\\
+  		\end{bmatrix}$
+  		
+  		\begin{multipleChoice}
+  			\choice [correct]{Echelon form}
+  			\choice{RREF}
+  			\choice{neither}
+  		\end{multipleChoice}
+  		\end{question}
+  		
+  		\begin{question}
+  		$ \begin{bmatrix}
+  			1&2&4\\
+  			0&0&0\\
+  			0&1&3
+  		\end{bmatrix}$
+  			\begin{multipleChoice}
+  				\choice {Echelon form}
+  				\choice{RREF}
+  				\choice[correct]{neither}
+  			\end{multipleChoice}
+  		
+  	\end{question}
+  	
+  	\begin{question}
+  		$\begin{bmatrix}
+  		1&0&0&4&9&0\\
+  		0&0&1&3&2&0\\
+  		0&0&0&1&0&0\\
+  		0&0&0&0&0&1
+  		\end{bmatrix}$
+  		
+  			\begin{multipleChoice}
+  				\choice [correct]{Echelon form}
+  				\choice{RREF}
+  				\choice{neither}
+  			\end{multipleChoice}
+  			
+  			\end{question}
+  			
+  			 	\begin{question}
+  			 		$\begin{bmatrix}
+  			 		1&0&3&0&8&0\\
+  			 		0&1&1&0&3&-4\\
+  			 		0&0&0&1&0&-5
+  			 		\end{bmatrix}$
+  			 		
+  			 		\begin{multipleChoice}
+  			 			\choice {Echelon form}
+  			 			\choice[correct]{RREF}
+  			 			\choice{neither}
+  			 		\end{multipleChoice}
+  			 		
+  			 	\end{question}
+  	
+  	%-----------------------------------------------------------------------------
+  	
+  	\begin{question}
+  	Given the augmented matrix below that corresponds to a linear system in variables $x_1,x_2,x_3,$ and $x_4$, what is the correct parametric description of the solution set?
+  		
+  	$$\begin{amatrix}{4}
+  	0&1&4&0&2\\
+  	0&0&0&1&7\\
+  	0&0&0&0&0\\
+  	0&0&0&0&0
+  	\end{amatrix}$$
+  		
+  		
+  		\begin{multipleChoice}
+  			\choice{$\left\{ \begin{array}{rl}
+  			x_1&= 2-x_2-4x_3\\
+  			x_2 &= 7\\
+  			x_3 &free\\
+  			x_4 &free\\
+  			\end{array}
+  			 \right.$}
+  			\choice{$\left\{ \begin{array}{rl}
+  				x_1&= 2-x_2-4x_3\\
+  				x_2 &free\\
+  				x_3 &=7\\
+  				x_4 &free\\ \end{array}
+  				\right.$}
+  			\choice[correct]{$\left\{ \begin{array}{rl}
+  				x_1&= 2-4x_3\\
+  				x_2 &free\\
+  				x_3 &free\\
+  				x_4 &=7 \end{array}
+  				\right.$}
+  			\choice{no solution}
+  		\end{multipleChoice}
+  		
+  	\end{question}
+  	
+  	%-----------------------------------------------------------------------------
+  
+  \end{document}
