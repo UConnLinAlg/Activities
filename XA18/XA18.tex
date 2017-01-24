@@ -1,0 +1,67 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+\newcommand{\bu}{{\bf u}}
+\newcommand{\bv}{{\bf v}}
+\newcommand{\bb}{{\bf b}}
+\newcommand{\ba}{{\bf a}}
+\newcommand{\bx}{{\bf x}}
+\newcommand{\bp}{{\bf p}}
+\newcommand{\RR}{\bf R}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{M-2  \hfill Math 2210Q} 
+
+  	
+  
+  	%-----------------------------------------------------------------------------	
+ 
+
+  	 	\begin{question} Let $A = \begin{bmatrix}
+  	 		3 &0\\
+  	 		0&1
+  	 		\end{bmatrix}$ and define $T: \RR^2 \to \RR^2$ by $T(\bx) = A\bx$.  Let $\bu = \begin{bmatrix} 1\\-1 \end{bmatrix}$ and compute $T(\bu)$.\\
+  	 		
+ $$T(\bu) = \left[ \begin{array}{c} \answer{3} \\ \answer{-1} \end{array} \right]$$
+
+ 
+  	
+  		\end{question}
+  		
+  		%-----------------------------------------------------------------------------	
+  		
+  		
+  		\begin{question} Let $A = \begin{bmatrix}
+  			-1 &2\\
+  			4&1
+  			\end{bmatrix}$ and define $T: \RR^2 \to \RR^2$ by $T(\bx) = A\bx$.  Let $\bu = \begin{bmatrix} -3\\1 \end{bmatrix}$ and compute $T(\bu)$.\\
+  			
+  			$$T(\bu) = \left[ \begin{array}{c} \answer{5} \\ \answer{-11} \end{array} \right]$$
+  			
+  			
+  			
+  		\end{question}
+  		%-----------------------------------------------------------------------------	
+  		
+  		
+  		\begin{question} Let $A$ be a $7\times 6$ matrix. What must $a$ and $b$ be in order to define $T: \RR^a \to \RR^b$ by $T(\bx) = A\bx$?
+  			
+  		\begin{center}$a= \answer{6}$ \hspace{20pt} $b = \answer{7}$\end{center}
+  		
+  		\end{question}
+  			%-----------------------------------------------------------------------------	
+  			
+  				\begin{question} Let $T:\RR^3 \to \RR$ be a linear transformation. Then
+  					
+  					\begin{center}$T({\bf 0}) = \answer{0}$\end{center}
+  					
+  				\end{question}
+  		
+  \end{document}
