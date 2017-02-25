@@ -10,16 +10,13 @@
 
 %\renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\RR}{\bf R}
-\def\Nul{\mathop{\rm Nul}}
-\def\Col{\mathop{\rm Col}}
-\def\adj{\mathop{\rm adj}}
-\def\Span{\mathop{\rm Span}}
+
 
 %  \input{preamble.tex}
   \begin{document}
   	\title{Lay 4.2  \hfill Math 2210Q} 
   %----------------------------------------------------------------
-  \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\vec{0}$ is in $\Nul A$.
+  \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\vec{0}$ is in $Nul A$.
   			
   			\begin{multipleChoice}
   				\choice[correct]{True}
@@ -28,7 +25,7 @@
   			
   		\end{question}	
   		%----------------------------------------------------------------
-  		  \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\vec{0}$ is in $\Col A$.
+  		  \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\vec{0}$ is in $Col A$.
   		  	
   		  	\begin{multipleChoice}
   		  		\choice[correct]{True}
@@ -37,7 +34,7 @@
   		  	
   		  \end{question}	
   		  %----------------------------------------------------------------
-     \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\Col A = \Span\{\vec{a}_1,\dots, \vec{a}_n\}$ where $A = [\vec{a}_1,\dots, \vec{a}_n]$.
+     \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $Col A = \text{Span}\{\vec{a}_1,\dots, \vec{a}_n\}$ where $A = [\vec{a}_1,\dots, \vec{a}_n]$.
      	
      	\begin{multipleChoice}
      		\choice[correct]{True}
@@ -46,7 +43,7 @@
      	
      \end{question}	
      %----------------------------------------------------------------
-        \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\Col A$ is a subspace of $\RR^n$
+        \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then Col $A$ is a subspace of $\RR^n$
         	
         	\begin{multipleChoice}
         		\choice{True}
@@ -55,7 +52,7 @@
         	
         \end{question}	
         %----------------------------------------------------------------
-           \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\Col A$ is a subspace of $\RR^m$
+           \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $Col A$ is a subspace of $\RR^m$
            	
            	\begin{multipleChoice}
            		\choice[correct]{True}
@@ -64,7 +61,7 @@
            	
            \end{question}	
            %----------------------------------------------------------------
-         \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\Nul A$ is a subspace of $\RR^m$
+         \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $Nul A$ is a subspace of $\RR^m$
          	
          	\begin{multipleChoice}
          		\choice{True}
@@ -73,7 +70,7 @@
          	
          \end{question}	
          %----------------------------------------------------------------
-          \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\Nul A$ is a subspace of $\RR^n$
+          \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $Nul A$ is a subspace of $\RR^n$
           	
           	\begin{multipleChoice}
           		\choice[correct]{True}
@@ -82,7 +79,7 @@
           	
           \end{question}	
           %----------------------------------------------------------------
-           \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then $\Col A$ is $\RR^m$
+           \begin{question} True/False: Let $A$ be any $m\times n$ matrix, then  $A$ is $\RR^m$
            	
            	\begin{multipleChoice}
            		\choice{True}
@@ -91,7 +88,7 @@
            	
            \end{question}	
            %----------------------------------------------------------------
-            \begin{question} Suppose $\begin{bmatrix} 1\\2\end{bmatrix}$ is a solution to $A\vec{x} = \vec{0}$ where $A$ is a $5\times 2$ matrix. Is $\begin{bmatrix} 1\\2\end{bmatrix}$ in $\Nul A$?
+            \begin{question} Suppose $\begin{bmatrix} 1\\2\end{bmatrix}$ is a solution to $A\vec{x} = \vec{0}$ where $A$ is a $5\times 2$ matrix. Is $\begin{bmatrix} 1\\2\end{bmatrix}$ in Nul $A$?
             	
             	\begin{multipleChoice}
             		\choice[correct]{Yes}
@@ -104,9 +101,9 @@
              \begin{question} Suppose $A\begin{bmatrix} 1\\4\end{bmatrix} = \begin{bmatrix} 5\\6\\7\end{bmatrix}$. Which of the following statements is true?
              	
              	\begin{multipleChoice}
-             		\choice{$\begin{bmatrix} 1\\4\end{bmatrix}\in \Col A$ }
-             		\choice{$\begin{bmatrix} 5\\6\\7\end{bmatrix}\in \Nul A$}
-             		\choice[correct]{$\begin{bmatrix} 5\\6\\7\end{bmatrix}\in \Col A$}
+             		\choice{$\begin{bmatrix} 1\\4\end{bmatrix}\in\text{Col} A$ }
+             		\choice{$\begin{bmatrix} 5\\6\\7\end{bmatrix}\in \text{Nul} A$}
+             		\choice[correct]{$\begin{bmatrix} 5\\6\\7\end{bmatrix}\in \text{Col} A$}
              	
              	\end{multipleChoice}
              	
