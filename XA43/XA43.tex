@@ -10,6 +10,22 @@
 
 %\renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\RR}{\bf R}
+\def\adj{\mathop{\rm adj}}
+\def\degrees{$^{\circ}$}
+\def\Col{\mathop{\rm Col}}
+\def\det{\mathop{\rm det}}
+\def\dim{\mathop{\rm dim}}
+\def\diag{\mathop{\rm diag}}
+\def\gcd{\mathop{\rm gcd}}
+\def\Inn{\mathop{\rm Inn}}
+\def\Nul{\mathop{\rm Nul}}
+\def\rank{\mathop{\rm rank}}
+\def\rk{\mathop{\rm rk}}
+\def\Row{\mathop{\rm Row}}
+\def\Span{\mathop{\rm Span}}
+\def\spec{\mathop{\rm spec}}
+\def\tr{\mathop{\rm tr}}
+\def\vol{\mathop{\rm vol}}
 
 
 %  \input{preamble.tex}
@@ -43,7 +59,7 @@
   		   	
   		   \end{question}	
   	  %----------------------------------------------------------------
-  	  \begin{question} True/False: The pivot columns of $A$ form a basis for $Col A$.
+  	  \begin{question} True/False: The pivot columns of $A$ form a basis for $\Col A$.
   	  	
   	  	\begin{multipleChoice}
   	  		\choice[correct]{True}
@@ -57,9 +73,9 @@
   	   	\hspace{20pt} 
   	   	U_1 = \begin{bmatrix}2 & 0 & 4 &3\\ 0& 3&0&2\\0&0&0&1\end{bmatrix} \hspace{20pt}U_2= \begin{bmatrix}1 & 0 & 2 &0\\ 0& 1&0&0\\0&0&0&1\end{bmatrix}$$
   	   	\begin{multipleChoice}
-  	   		\choice{ $\left\{ \begin{bmatrix} 2\\0\\0 \end{bmatrix}, \begin{bmatrix} 0\\3\\0 \end{bmatrix}, \begin{bmatrix} 3\\2\\1 \end{bmatrix}\right\}$ forms a basis for $Col A$.}
-  	   			\choice{ $\left\{ \begin{bmatrix} 1\\0\\0 \end{bmatrix}, \begin{bmatrix} 0\\1\\0 \end{bmatrix}, \begin{bmatrix} 0\\0\\1 \end{bmatrix}\right\}$ forms a basis for $Col A$.}
-  	   				\choice[correct]{ $\left\{ \begin{bmatrix} 2\\-2\\-6 \end{bmatrix}, \begin{bmatrix} 6\\3\\0 \end{bmatrix}, \begin{bmatrix} 7\\2\\-8 \end{bmatrix}\right\}$ forms a basis for $Col A$.}
+  	   		\choice{ $\left\{ \begin{bmatrix} 2\\0\\0 \end{bmatrix}, \begin{bmatrix} 0\\3\\0 \end{bmatrix}, \begin{bmatrix} 3\\2\\1 \end{bmatrix}\right\}$ forms a basis for $\Col A$.}
+  	   			\choice{ $\left\{ \begin{bmatrix} 1\\0\\0 \end{bmatrix}, \begin{bmatrix} 0\\1\\0 \end{bmatrix}, \begin{bmatrix} 0\\0\\1 \end{bmatrix}\right\}$ forms a basis for $\Col A$.}
+  	   				\choice[correct]{ $\left\{ \begin{bmatrix} 2\\-2\\-6 \end{bmatrix}, \begin{bmatrix} 6\\3\\0 \end{bmatrix}, \begin{bmatrix} 7\\2\\-8 \end{bmatrix}\right\}$ forms a basis for $\Col A$.}
   	   	\end{multipleChoice}
   	   	
   	   \end{question}	
