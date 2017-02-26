@@ -2,6 +2,7 @@
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
 \newcommand {\amatrix }[1]{\left [\begin {array}{@{}*{##1}{c}|c@{}} }
 \newcommand {\RR }[0]{\bf R}
+\newcommand {\Col }[0]{\mathop {\rm Col}}
 \newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[2]{}
 \newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
