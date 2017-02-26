@@ -11,6 +11,7 @@
 \newcommand {\rank }[0]{\mathop {\rm rank}}
 \newcommand {\rk }[0]{\mathop {\rm rk}}
 \newcommand {\Row }[0]{\mathop {\rm Row}}
+\newcommand {\Span }[0]{\mathop {\rm Span}}
 \newcommand {\spec }[0]{\mathop {\rm spec}}
 \newcommand {\tr }[0]{\mathop {\rm tr}}
 \newcommand {\vol }[0]{\mathop {\rm vol}}
