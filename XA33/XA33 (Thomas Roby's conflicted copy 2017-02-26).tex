@@ -10,7 +10,8 @@
 
 %\renewcommand{\vec}[1]{\mathbf{#1}}
 \newcommand{\RR}{\bf R}
-\newcommand{\adj}{\text{ adj }}
+%\newcommand{\adj}{\text{ adj }}
+\newcommand{\adj}{\mathop{\rm adj}}
 
 %  \input{preamble.tex}
   \begin{document}
@@ -58,9 +59,9 @@
        \begin{question} For which of the following matrices can you use cramer's rule to find the solution to $A\vec{x} = \vec{b}$ for some vector $\vec{b}$ of the appropriate dimension? 
        	
        	\begin{multipleChoice}
-       		\choice {$A = \begin{bmatrix} 1 &7\\ 3& 4\\ 0&7\end{bmatrix}$ }\vspace{5pt}\\
-       			\choice[correct]{ $A = \begin{bmatrix} 1 &-9\\ 0& 1\end{bmatrix}$} \vspace{5pt}\\
-       			\choice {$A = \begin{bmatrix} 1 &7&2&5\\ 0&1&1& 4\\ 0&0&0&-7\\0&0&0&5\end{bmatrix}$} \}vspace{5pt}\\
+       		\choice $A = \begin{bmatrix} 1 &7\\ 3& 4\\ 0&7\end{bmatrix}$ \vspace{5pt}\\
+       			\choice[correct] $A = \begin{bmatrix} 1 &-9\\ 0& 1\end{bmatrix}$ \vspace{5pt}\\
+       			\choice $A = \begin{bmatrix} 1 &7&2&5\\ 0&1&1& 4\\ 0&0&0&-7\\0&0&0&5\end{bmatrix}$ \vspace{5pt}\\
        		\end{multipleChoice}
        	
        	
@@ -70,8 +71,8 @@
         \begin{question} For which of the following matrices can you use cramer's rule to find the solution to $A\vec{x} = \vec{b}$ for some vector $\vec{b}$ of the appropriate dimension? 
         	
         	\begin{multipleChoice}
-       	\choice[correct]{ $A = \begin{bmatrix} 1 &0 &2\\ 0&7& 1 \\0&3&1\end{bmatrix}$} \vspace{5pt}\\
-       	\choice{$A = \begin{bmatrix} 2 &-6\\ -3& 9\end{bmatrix}$}\vspace{5pt}\\	
+       	\choice[correct] $A = \begin{bmatrix} 1 &0 &2\\ 0&7& 1 \\0&3&1\end{bmatrix}$ \vspace{5pt}\\
+       	\choice $A = \begin{bmatrix} 2 &-6\\ -3& 9\end{bmatrix}$ \vspace{5pt}\\	
        	  		\end{multipleChoice}
        	  		
        	  		
