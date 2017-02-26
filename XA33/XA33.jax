@@ -2,11 +2,7 @@
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
 \newcommand {\amatrix }[1]{\left [\begin {array}{@{}*{##1}{c}|c@{}} }
 \newcommand {\RR }[0]{\bf R}
-\newcommand {\adj }[0]{\mathop {\rm adj}}
-\newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
-\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
-\newcommand {\reserved@a }[1]{}
+\newcommand {\adj }[0]{\text { adj }}
 \newcommand {\reserved@a }[2]{}
 \newcommand {\AppendGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Append \grfext@Check }{\grfext@Append \grfext@@Add }}
 \newcommand {\PrependGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Prepend \grfext@Check }{\grfext@Prepend \grfext@@Add }}
