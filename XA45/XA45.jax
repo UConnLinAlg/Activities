@@ -2,17 +2,20 @@
 \newcommand {\DeclareMathOperator }[2]{\@OldDeclareMathOperator {##1}{##2}\immediate \write \myfile {\unexpanded {\DeclareMathOperator }{\unexpanded {##1}}{\unexpanded {##2}}}}
 \newcommand {\amatrix }[1]{\left [\begin {array}{@{}*{##1}{c}|c@{}} }
 \newcommand {\RR }[0]{\bf R}
+\newcommand {\adj }[0]{\mathop {\rm adj}}
+\newcommand {\degrees }[0]{$^{\circ }$}
+\newcommand {\Col }[0]{\mathop {\rm Col}}
+\newcommand {\diag }[0]{\mathop {\rm diag}}
+\newcommand {\Inn }[0]{\mathop {\rm Inn}}
+\newcommand {\Nul }[0]{\mathop {\rm Nul}}
+\newcommand {\rank }[0]{\mathop {\rm rank}}
+\newcommand {\rk }[0]{\mathop {\rm rk}}
+\newcommand {\Row }[0]{\mathop {\rm Row}}
+\newcommand {\Span }[0]{\mathop {\rm Span}}
+\newcommand {\spec }[0]{\mathop {\rm spec}}
+\newcommand {\tr }[0]{\mathop {\rm tr}}
+\newcommand {\vol }[0]{\mathop {\rm vol}}
 \newcommand {\reserved@a }[2]{}
-\newcommand {\reserved@a }[2]{}
-\newcommand {\HyperFirstAtBeginDocument }[0]{\AtBeginDocument }
-\newcommand {\reserved@a }[1]{}
-\newcommand {\reserved@a }[2]{}
-\newcommand {\AppendGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Append \grfext@Check }{\grfext@Append \grfext@@Add }}
-\newcommand {\PrependGraphicsExtensions }[0]{\@ifundefined {Gin@extensions}{\let \Gin@extensions \@empty }{}\@ifstar {\grfext@Prepend \grfext@Check }{\grfext@Prepend \grfext@@Add }}
-\newcommand {\RemoveGraphicsExtensions }[1]{\@ifundefined {Gin@extensions}{\def \Gin@extensions {}}{\edef \grfext@tmp {\zap@space ##1 \@empty }\@for \grfext@ext :=\grfext@tmp \do {\def \grfext@next {\let \grfext@tmp \Gin@extensions \@expandtwoargs \@removeelement \grfext@ext \Gin@extensions \Gin@extensions \ifx \grfext@tmp \Gin@extensions \let \grfext@next \relax \fi \grfext@next }\grfext@next }}\grfext@Print \RemoveGraphicsExtensions }
-\newcommand {\epstopdfsetup }[0]{\setkeys {ETE}}
-\newcommand {\epstopdfcall }[1]{\ifETE@InsideSetfile \expandafter \@firstoftwo \else \expandafter \@secondoftwo \fi {`##1}{\Gin@base \Gin@ext }}
-\newcommand {\epstopdfDeclareGraphicsRule }[4]{\ifx \\##4\\\@PackageError {epstopdf-base}{Conversion command is missing}\@ehc \else \begingroup \@ifundefined {Gin@rule@##1}{}{\@PackageInfo {epstopdf-base}{Redefining graphics rule for `##1'}}\endgroup \@namedef {Gin@rule@##1}####1{{##2}{##3}{\epstopdfcall {##4}}}\fi }
 \newcommand {\mdf@patchamsthm }[0]{\let \mdf@deferred@thm@head \deferred@thm@head \pretocmd {\deferred@thm@head }{\@inlabelfalse }{\mdf@PackageInfo {mdframed detected package amsthm 
  changed the theorem header of amsthm\MessageBreak }}{\mdf@PackageError {mdframed detected package amsthm 
  changed the theorem header of amsthm failed\MessageBreak }}}
@@ -36,4 +39,3 @@
 \newcommand {\reserved@a }[2]{}
 \newcommand {\reserved@a }[0]{\AtBeginDocument }
 \newcommand {\reserved@a }[1]{}
-\newcommand {\reserved@a }[2]{}
