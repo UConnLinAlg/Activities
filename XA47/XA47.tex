@@ -1,0 +1,89 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+\def\dim{\mathop{\rm dim}}
+\def\rank{\mathop{\rm rank}}
+
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 4.7  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} True/False: If $\mathcal{B}$ and $\mathcal{C}$ are both bases of the vector space $V$, then the $n\times n$ matrix $
+  	  		    	\underset{\mathcal{C}\leftarrow \mathcal{B}}{P}$ sends vectors in $\mathcal{B}$-coordinates to the corresponding vectors in $\mathcal{C}$-coordinates.
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice[correct]{True}
+  	  		    		\choice{False}
+  	  		    	\end{multipleChoice}
+  	  		    	
+  	  		    \end{question}	
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} Consider two bases $\mathcal{B} =\{\vec{b}_1,\vec{b}_2\}$ and $\mathcal{C} =\{\vec{c}_1,\vec{c}_2\}$ for a vector space $V$. Suppose that $\vec{b}_1 = 3\vec{c}_1+2\vec{c}_2$ and $\vec{b}_2 = -\vec{c}_2$. 
+  	  		    	
+  	  		    	\begin{enumerate}
+  	  		    		\item What is the $2\times 2$ change-of-coordinates matrix 	$\underset{\mathcal{C}\leftarrow \mathcal{B}}{P}$?\\
+  	  		    		
+  	  		    		$\underset{\mathcal{C}\leftarrow \mathcal{B}}{P}=	\begin{bmatrix} \answer{3} &\answer{0}\\ \answer{2} &\answer{-1}\end{bmatrix}$\\
+  	  		    		
+  	  		    		\item If $[\vec{x}]_{\mathcal{B}} = \begin{bmatrix}3\\-4\end{bmatrix}$ is a vector in $\mathcal{B}$-coordinates, what is the corresponding vector in $\mathcal{C}$-coordinates?\\
+  	  		    		
+  	  		    		$[\vec{x}]_{\mathcal{C}} = \begin{bmatrix}\answer{9}\\\answer{10}\end{bmatrix}$\\
+  	  		    		
+  	  		    		\item What is the $2\times 2$ change-of-coordinates matrix 	$\underset{\mathcal{B}\leftarrow \mathcal{C}}{P}$?\\
+  	  		    		
+  	  		    		\begin{hint}
+  	  		    			$\underset{\mathcal{B}\leftarrow \mathcal{C}}{P} = \left(\underset{\mathcal{C}\leftarrow \mathcal{B}}{P}\right)^{-1}$
+  	  		    			\end{hint}
+  	  		    			
+  	  		    			$\underset{\mathcal{B}\leftarrow \mathcal{C}}{P} = \frac{1}{\answer{-3}}\begin{bmatrix} \answer{-1} &\answer{0}\\ \answer{-2} &\answer{3}\end{bmatrix}$\\
+  	  		    	\end{enumerate}
+  	  		    
+  	  		    
+  	  		    	
+  	  		    \end{question}	
+  	  		     %----------------------------------------------------------------
+  	  		      \begin{question} Consider two bases $\mathcal{B} =\{\vec{b}_1,\vec{b}_2\}$ and $\mathcal{C} =\{\vec{c}_1,\vec{c}_2\}$ for a vector space $V$. Suppose that $\vec{c}_1 = 2\vec{b}_1-2\vec{b}_2$ and $\vec{c}_2 = \vec{b}_1+3\vec{b}_2$. Which change-of-coordinates matrix is $\begin{bmatrix} 2&1\\ -2&3 \end{bmatrix}$?\\
+  	  		      		\begin{multipleChoice}
+  	  		      			\choice{$\underset{\mathcal{C}\leftarrow \mathcal{B}}{P}$}
+  	  		      			\choice[correct]{$\underset{\mathcal{B}\leftarrow \mathcal{C}}{P}$}
+  	  		      			\end{multipleChoice}
+  	  		      
+  	  
+  	  		      	\end{question}
+  	  		      %----------------------------------------------------------------
+  	  		     \begin{question} Let $\mathcal{B} =\{\vec{b}_1,\vec{b}_2\}$ and $\mathcal{C} =\{\vec{c}_1,\vec{c}_2\}$ be bases for $\RR^2$. Find both change-in-coordinates matrices.
+  	  		     	$$\vec{b}_1 = \begin{bmatrix} 2 \\1\end{bmatrix}, \hspace{10pt} \vec{b}_2 = \begin{bmatrix}0 \\4\end{bmatrix}, \hspace{20pt} \vec{c}_1 = \begin{bmatrix} -1 \\1\end{bmatrix}, \hspace{10pt} \vec{c}_2 = \begin{bmatrix} 3 \\2\end{bmatrix}$$
+  	  		     
+  	  		     	$\underset{\mathcal{C}\leftarrow \mathcal{B}}{P}=\begin{bmatrix}
+  	  		     	-\frac{\answer{1}}{5} &\frac{\answer{12}}{\answer{5}} \\
+  	  		     	\frac{\answer{3}}{\answer{5}} & \frac{\answer{4}}{\answer{5}}
+  	  		     	\end{bmatrix}$\\\vspace{10pt}\\
+  	  		     	$\underset{\mathcal{B}\leftarrow \mathcal{C}}{P}\begin{bmatrix}
+  	  		     	-\frac{\answer{1}}{2} &\frac{\answer{3}}{2} \\
+  	  		     	\frac{\answer{3}}{\answer{8}} & \frac{\answer{1}}{8}
+  	  		     	\end{bmatrix}$\\
+  	  		     	
+  	  		     	\begin{hint}
+  	  		     		$\begin{bmatrix}\vec{c}_1& \vec{c}_2 &\vec{b}_1 &\vec{b}_2\end{bmatrix} \sim \begin{bmatrix} I & \underset{\mathcal{C}\leftarrow \mathcal{B}}{P} \end{bmatrix}$
+  	  		     		\end{hint}
+  	  		     \end{question}
+  	  		    
+  	  		    
+  	  		    
+  	  		                 %----------------------------------------------------------------
+  	  		    
+  \end{document}

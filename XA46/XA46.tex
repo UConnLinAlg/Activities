@@ -1,0 +1,86 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+\def\dim{\mathop{\rm dim}}
+\def\rank{\mathop{\rm rank}}
+
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 4.6  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} True/False: Let $A$ be a square matrix. If $\dim \Nul A = 0$ then $A$ is invertible.
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice[correct]{True}
+  	  		    		\choice{False}
+  	  		    	\end{multipleChoice}
+  	  		    	
+  	  		    \end{question}	
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} True/False: Let $A$ be an $n\times n$ matrix. If $\rank A = n$ then $A$ is invertible.
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice[correct]{True}
+  	  		    		\choice{False}
+  	  		    	\end{multipleChoice}
+  	  		    	
+  	  		    \end{question}	
+  	  		     %----------------------------------------------------------------
+  	  		      \begin{question} If $A$ is  a $3\times 5$ matrix with a two-dimensional null space, what is the rank of $A$?
+  	  		      	
+  	  		     $\rank A = \answer{3}$
+  	  		      	
+  	  		      \end{question}	
+  	  		      %----------------------------------------------------------------
+  	  		       \begin{question} If $A$ is  a $2\times 3$ matrix with $\dim \Col A = 3$, what is $\dim \Nul A$?
+  	  		       	
+  	  		       	$\dim\Nul A = \answer{0}$
+  	  		       	
+  	  		       \end{question}	
+  	  		       %----------------------------------------------------------------
+  	  		        \begin{question} If $A$ is  a $8\times 7$ matrix with $\dim \Col A = 3$, what is the rank of $A$?
+  	  		        	
+  	  		        	$\rank A = \answer{3}$
+  	  		        	
+  	  		        	\vspace{10pt}
+  	  		        	\begin{hint}
+  	  		        		$\rank A = \dim \Col A$
+  	  		        		\end{hint}
+  	  		        \end{question}	
+  	  		        %----------------------------------------------------------------
+  	  		               \begin{question} If $A$ is  a $8\times 7$ matrix with $\dim \Col A = 3$, what is the rank of $A$?
+  	  		               	
+  	  		               	$\rank A = \answer{3}$
+  	  		               	
+  	  		               	\vspace{10pt}
+  	  		               	\begin{hint}
+  	  		               		$\rank A = \dim \Col A$
+  	  		               	\end{hint}
+  	  		               \end{question}	
+  	  		               %----------------------------------------------------------------
+  	  		                 \begin{question} $A$ and $B$ below are row equivalent. Determine the following values.
+  	  		                 	$$A = \begin{bmatrix} 1&-1& 2&3&1&0\\ 0&5&-2&1&1&1\\ -3&3&-6&-9&-3&0\\-1&1&2&1&-2&1\end{bmatrix} \hspace{10pt} B = \begin{bmatrix} 1&-1&2&3&1&0\\ 0&5&-2&1&1&1\\ 0&0&4&4&-1&1\\ 0&0&0&0&0&0\end{bmatrix}$$
+  	  		                 	
+  	  		                 $\rank A = \answer{3}$\\
+  	  		                 $\dim \Nul A = \answer{3}$\\
+  	  		                 
+  	  		                 A basis for $\Col A$ is $\left\{ \begin{bmatrix} \answer{1}\\\answer{0}\\ \answer{-3}\\ \answer{-1}\end{bmatrix},    \begin{bmatrix} \answer{-1}\\\answer{5}\\ \answer{3}\\ \answer{1}\end{bmatrix}, \begin{bmatrix} \answer{2}\\\answer{-2}\\ \answer{-6}\\ \answer{2}\end{bmatrix}    \right\}$
+  	  		              
+  	  		                 \end{question}
+  	  		                 %----------------------------------------------------------------
+  	  		    
+  \end{document}

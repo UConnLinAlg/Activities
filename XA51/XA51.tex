@@ -1,0 +1,103 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+\def\dim{\mathop{\rm dim}}
+\def\rank{\mathop{\rm rank}}
+
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 5.1  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} What are the eigenvalues of $A$?
+  	  		    	$$A = \begin{bmatrix} 2&6\\ 0& -5\end{bmatrix}$$
+  	  		    	
+  	  		    List in order from smallest to largest. $\lambda_1 = \answer{-5}$, $\lambda_2 = \answer{2}$\\
+  	  		    
+  	  		    	
+  	  		    \end{question}	
+  	  		    %----------------------------------------------------------------
+  	  		     \begin{question} What are the eigenvalues of $A$?
+  	  		     	$$A = \begin{bmatrix} 1&2&-3\\ 0& 2 &5\\ 0&0& 1\end{bmatrix}$$
+  	  		     	
+  	  		     	List in order from smallest to largest. $\lambda_1 = \answer{1}$, $\lambda_2 = \answer{2}$\\
+  	  		     	
+  	  		     	
+  	  		     \end{question}	
+  	  		     %----------------------------------------------------------------
+  	  		     \begin{question} What are the eigenvalues of $A$?
+  	  		     	$$A = \begin{bmatrix} -1&4&3\\ 0& 5 &-1\\ 0&0& 8\end{bmatrix}$$
+  	  		     	
+  	  		     	List in order from smallest to largest. $\lambda_1 = \answer{-1}$, $\lambda_2 = \answer{5}$, $\lambda_3 = \answer{8}$\\
+  	  		     	
+  	  		     	
+  	  		     \end{question}	
+  	  		      %----------------------------------------------------------------
+  	  		       \begin{question} Is $\lambda = -1$ an eigenvalue of $A$?
+  	  		       	$$A = \begin{bmatrix} -1&4\\ 3& -2\end{bmatrix}$$
+  	  		       	
+  	  		       \begin{multipleChoice}
+  	  		       	\choice{Yes}
+  	  		       	\choice[correct]{No}
+  	  		  \end{multipleChoice}
+  	  		       	
+  	  		       	\begin{hint}
+  	  		       	The eigenvalues of the echelon form of $A$ are not necessarily the same as the eigenvalues of $A$. So row reducing to a triangular matrix and looking at the diagonal is not a valid method here. Instead consider the equation $(A-\lambda I)\vec{x} =\vec{0}$.
+  	  		       		\end{hint}
+  	  		       	
+  	  		       \end{question}	
+  	  		       %----------------------------------------------------------------
+  	  		        \begin{question} Which of the following is an eigenvector of $A$?
+  	  		        	$$A = \begin{bmatrix} 3&0&-1\\ 2&3& 1\\-3&4&5\end{bmatrix}$$
+  	  		        	
+  	  		        	\begin{multipleChoice}
+  	  		        		\choice{$\vec{x}=\begin{bmatrix} 2\\4\\1\end{bmatrix}$}
+  	  		        		\choice[correct]{$\vec{x}=\begin{bmatrix} 2\\2\\-2\end{bmatrix}$}
+  	  		        	\end{multipleChoice}
+  	  		        	
+  	  		        	\begin{hint}
+  	  		        		A nonzero vector $\vec{x}$ is an eigenvector of $A$ if $A\vec{x}$ is a multiple of $\vec{x}$, in other words if $A\vec{x} =\lambda\vec{x}$ for some $\lambda$.
+  	  		        	\end{hint}
+  	  		        	
+  	  		        \end{question}	
+  	  		        %----------------------------------------------------------------
+  	  		             \begin{question} True/False: To find the eigenvalues of $A$ are the entries in the main diagonal of $U$ where $U$ is an echelon form of $A$.\\
+  	  		             	
+  	  		             	\begin{multipleChoice}
+  	  		             		\choice{True}
+  	  		             		\choice[correct]{False}
+  	  		             	\end{multipleChoice}
+  	  		             	
+  	  		             	\begin{hint}
+  	  		             		Question 4 is a counter example.
+  	  		             	\end{hint}
+  	  		             	
+  	  		             \end{question}	
+  	  		                 %----------------------------------------------------------------
+  	  		    \begin{question} True/False: The scalar zero is an eigenvalue of $A$ if and only if $A$ is not invertible.
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice[correct]{True}
+  	  		    		\choice{False}
+  	  		    	\end{multipleChoice}
+  	  		    	
+  	  		    	\begin{hint}
+  	  		    		Zero is an eigenvalue of $A$ means $A\vec{x} = 0\vec{x}$ has a nontrivial ($\vec{x}\neq 0$) solution. Use the IMT.
+  	  		    	\end{hint}
+  	  		    	
+  	  		    \end{question}	
+  	  		    %-----------------
+  \end{document}

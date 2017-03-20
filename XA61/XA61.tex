@@ -1,0 +1,103 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+\def\dim{\mathop{\rm dim}}
+\def\rank{\mathop{\rm rank}}
+
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 6.1  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} Let $\vec{u} = \begin{bmatrix} 1\\3\end{bmatrix}$, $\vec{v} = \begin{bmatrix} -5\\2\end{bmatrix}$, $\vec{w} = \begin{bmatrix} 1\\0\\-1\end{bmatrix}$, $\vec{x} = \begin{bmatrix} 2\\3\\1\end{bmatrix}$.\\ Compute the following:\\
+  	  		    	
+  	  		$\vec{u} \cdot \vec{u} = \answer{10}$\vspace{10pt}\\
+  	  		$||\vec{u}|| = \sqrt{\answer{10}}$\vspace{10pt}\\
+  	  		$||\vec{u}||^2 = \answer{10}$\vspace{10pt}\\
+  	  		$\vec{u} \cdot \vec{v} = \answer{1}$\vspace{10pt}\\
+  	  		$\vec{x}\cdot \vec{w} = \answer{1}$\vspace{10pt}\\
+  	  		$||\vec{v}||^2 = \answer{29}$\vspace{10pt}\\
+  	  		$||\vec{w} - \vec{x}|| = \sqrt{\answer{14}}$\vspace{10pt}\\
+  	  		
+  	  		
+  	  		
+  	  		Is the computation $\vec{u} \cdot \vec{w}$ possible?
+  	  \begin{multipleChoice}
+  	  \choice{Yes}
+  	  \choice[correct]{No}
+  	  \end{multipleChoice}
+  	  		    	
+  	  		    \end{question}	
+  	  		    %----------------------------------------------------------------
+  	  		   \begin{question} Let $\vec{u} = \begin{bmatrix} -1\\7\\2\end{bmatrix}$. Compute the following:\\
+  	  		   	
+  	  		   	$\left(\frac{1}{\vec{u}\cdot\vec{u}}\right)\vec{u} = \begin{bmatrix} \frac{\answer{-1}}{\answer{54}} \\ \frac{\answer{7}}{\answer{54}} \\\frac{\answer{1}}{\answer{27}}\end{bmatrix}$
+  	  		 \end{question}
+  	  		      %----------------------------------------------------------------
+  	  		        \begin{question} What is the distance between $\vec{x} = \begin{bmatrix} 3\\4\end{bmatrix}$ and $\vec{y} = \begin{bmatrix} 5\\-5 \end{bmatrix}$?
+  	  		        	
+  	  		        \begin{multipleChoice}
+  	  		        	\choice{85}
+  	  		        	\choice[correct]{$\sqrt{85}$}
+  	  		        	\choice{65}
+  	  		        	\choice{$\sqrt{65}$}
+  	  		    \end{multipleChoice}
+  	  		        \end{question}
+  	  		        %----------------------------------------------------------------
+  	  		         \begin{question} True/False: Two vectors in $\RR^n$ are orthogonal if and only if their inner product (dot product) is zero.
+  	  		         	
+  	  		         	\begin{multipleChoice}
+  	  		         		\choice[correct]{True}
+  	  		         		\choice{False}
+  	  		         	\end{multipleChoice}
+  	  		         \end{question}
+  	  		         %----------------------------------------------------------------
+  	  		            \begin{question} True/False: The vectors $\vec{x} = \begin{bmatrix} -1\\4\\3\end{bmatrix}$ and $\vec{y} = \begin{bmatrix} 2\\6\\2 \end{bmatrix}$ are orthogonal.
+  	  		            	
+  	  		            	\begin{multipleChoice}
+  	  		            		\choice{True}
+  	  		            		\choice[correct]{False}
+  	  		            	\end{multipleChoice}
+  	  		            \end{question}
+  	  		            %----------------------------------------------------------------
+  	  		             \begin{question} True/False: $\vec{v} = \begin{bmatrix} 1/2\\1/2\end{bmatrix}$ is a unit vector.
+  	  		             	
+  	  		             	\begin{multipleChoice}
+  	  		             		\choice{True}
+  	  		             		\choice[correct]{False}
+  	  		             	\end{multipleChoice}
+  	  		             \end{question}
+  	  		             %----------------------------------------------------------------
+  	  		               \begin{question} Find a unit vector in the direction of $\vec{v}=\begin{bmatrix} -1\\2\\-2\\4\end{bmatrix}$.\\
+  	  		               	
+  	  		               	First find the length of $\vec{v}$: $||\vec{v}|| = \answer{5}$.\vspace{10pt}\\
+  	  		               	
+  	  		               	Then find a unit vector $\vec{u} = \begin{bmatrix} -\answer{1}/\answer{5} \\ \answer{2}/\answer{5}\\ -\answer{2}/\answer{5} \\ \answer{4}/\answer{5}\end{bmatrix}$.
+  	  		               	
+  	  		              \end{question}
+  	  		               %----------------------------------------------------------------
+  	  		                 \begin{question} Find a unit vector in the direction of $\vec{v}=\begin{bmatrix} 1\\1\end{bmatrix}$.\\
+  	  		                 	
+  	  		                 	First find the length of $\vec{v}$: $||\vec{v}|| = \sqrt{\answer{2}}$.\vspace{10pt}\\
+  	  		                 	
+  	  		                 	Then find a unit vector $\vec{u} = \begin{bmatrix} 1/\sqrt{\answer{2}} \\ 1/\sqrt{\answer{2}}\\ \end{bmatrix}$.
+  	  		                 	
+  	  		                 \end{question}
+  	  		                 %----------------------------------------------------------------
+  	  		            
+  \end{document}
+  
+

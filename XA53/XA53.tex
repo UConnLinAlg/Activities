@@ -1,0 +1,103 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+\def\dim{\mathop{\rm dim}}
+\def\rank{\mathop{\rm rank}}
+
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 5.3  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} True/False: $n\times n$ matrices $A$ and $B$ are said to be similar if $A = PBP^{-1}$ for some invertible matrix $P$. \\
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice[correct]{True}
+  	  		    		\choice{False}
+  	  		    	\end{multipleChoice}
+  	  		    	
+  	  		    \end{question}	
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} Let $D = \begin{bmatrix} 2 &0\\ 0&5\end{bmatrix}$ and let $k\geq 1$. What is $D^k$?\\
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice[correct]{$D^k = \begin{bmatrix} 2^k &0\\ 0&5^k\end{bmatrix}$}
+  	  		    		\choice{ $D^k = \begin{bmatrix} 2k &0\\ 0&5k\end{bmatrix}$}
+  	  		    			\choice{ $D^k = \begin{bmatrix} 2 &k\\ k&5\end{bmatrix}$}
+  	  		    				\choice{ $D^k = \begin{bmatrix} 2^k &k\\ k&5^k\end{bmatrix}$}
+  	  		    		\end{multipleChoice}
+  	  		    	
+  	  		    \end{question}	
+  	  		     %----------------------------------------------------------------
+  	  		      \begin{question} Let $D = \begin{bmatrix} 2 &0\\ 0&5\end{bmatrix}$ and let $k\geq 1$. What is $D^k$?\\
+  	  		      	
+  	  		      	\begin{multipleChoice}
+  	  		      		\choice[correct]{$D^k = \begin{bmatrix} 2^k &0\\ 0&5^k\end{bmatrix}$}
+  	  		      		\choice{ $D^k = \begin{bmatrix} 2k &0\\ 0&5k\end{bmatrix}$}
+  	  		      		\choice{ $D^k = \begin{bmatrix} 2 &k\\ k&5\end{bmatrix}$}
+  	  		      		\choice{ $D^k = \begin{bmatrix} 2^k &k\\ k&5^k\end{bmatrix}$}
+  	  		      	\end{multipleChoice}
+  	  		      	
+  	  		      \end{question}	
+  	  		      %----------------------------------------------------------------
+  	  		       \begin{question} Let $A = PDP^{-1}$ such that $P= \begin{bmatrix} 3 &-1 \\ -8 &3\end{bmatrix}$ and $D = \begin{bmatrix} 2 &0 \\ 0 &-2\end{bmatrix}$. Compute the following:\\ 
+  	  		       	
+  	  		       	
+  	  		       	$A^4 = \begin{bmatrix} \answer{16} &\answer{0}\\\answer{0} &\answer{16}\end{bmatrix}$\\
+  	  		       
+  	  		       	$A^3 = \begin{bmatrix} \answer{136} &\answer{72}\\\answer{-384} &\answer{-136}\end{bmatrix}$\\	
+  	  		       	
+  	  		       \end{question}	
+  	  		       %----------------------------------------------------------------
+  	  		     \begin{question} True/False: An $n\times n$ matrix $A$ is diagonalizable if and only if $A$ has exactly $n$ eigenvectors.
+  	  		     	
+  	  		     	
+  	  		     \begin{multipleChoice}
+  	  		     	\choice{True}
+  	  		     	\choice[correct]{False}
+  	  		     	\end{multipleChoice}
+  	  		     	
+  	  		     	\begin{hint}
+  	  		     		Read the Diagonalization Theorem.
+  	  		     		\end{hint}
+  	  		     \end{question}	
+  	  		     %----------------------------------------------------------------
+  	  		      \begin{question} True/False: If a $4\times 4$ matrix $A$ has a linearly independent set of four eigenvectors, then $A$ is diagonalizable.\\
+  	  		      	
+  	  		      	
+  	  		      	\begin{multipleChoice}
+  	  		      		\choice[correct]{True}
+  	  		      		\choice{False}
+  	  		      	\end{multipleChoice}
+  	  		      	
+  	  		      	\begin{hint}
+  	  		      		Read the Diagonalization Theorem.
+  	  		      	\end{hint}
+  	  		      \end{question}	
+  	  		      %----------------------------------------------------------------
+  	  		      \begin{question} True/False: It is possible for an $n\times n$ matrix $A$ to have a linearly independent set of more than $n$ eigenvectors.
+  	  		      	
+  	  		      	\begin{multipleChoice}
+  	  		      		\choice{True}
+  	  		      		\choice[correct]{False}
+  	  		      	\end{multipleChoice}
+  	  		      	
+  	  		      	\begin{hint}
+  	  		      		$A$ has $n$ eigenvalues (counting multiplicities). For each eigenvalue, the eigenspace has dimension less than or equal to the multiplicity of the eigenvalue.
+  	  		      	\end{hint}
+  	  		      \end{question}	
+  	  		      %----------------------------------------------------------------
+  \end{document}
