@@ -1,0 +1,83 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+\newcommand{\RR}{\bf R}
+\newcommand{\adj}{\mathop{\rm adj}}
+\newcommand{\degrees}{$^{\circ}$}
+\newcommand{\Col}{\mathop{\rm Col}}
+\newcommand{\diag}{\mathop{\rm diag}}
+\newcommand{\Inn}{\mathop{\rm Inn}}
+\newcommand{\Nul}{\mathop{\rm Nul}}
+\newcommand{\rank}{\mathop{\rm rank}}
+\newcommand{\rk}{\mathop{\rm rk}}
+\newcommand{\Row}{\mathop{\rm Row}}
+\newcommand{\proj}{\mathop{\rm proj}}
+%% \def Doesn't work with Ximera, MathJax
+%\def\Span{\mathop{\rm Span}}
+\newcommand{\Span}{\mathop{\rm Span}}
+\newcommand{\spec}{\mathop{\rm spec}}
+\newcommand{\tr}{\mathop{\rm tr}}
+\newcommand{\vol}{\mathop{\rm vol}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 6.3  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} 
+  	  		    	How do you verify that $\{\vec{u}_1,\vec{u}_2,\vec{u}_3\}$ is an orthogonal set?
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice{Show that $\vec{u}_1\cdot\vec{u}_2\cdot\vec{u}_3 = \vec{0}$ }
+  	  		    		\choice{Show that $\vec{u}_1\cdot\vec{u}_2\cdot\vec{u}_3 = 0$ }
+  	  		    		\choice[correct]{ Show that $\vec{u}_1\cdot\vec{u}_2=0,  \vec{u}_1\cdot\vec{u}_3 = 0$ and $\vec{u}_2\cdot\vec{u}_3 =0$}
+  	  		    			\choice{ Show that $\vec{u}_1\cdot\vec{u}_2=\vec{0},  \vec{u}_1\cdot\vec{u}_3 = \vec{0}$ and $\vec{u}_2\cdot\vec{u}_3 =\vec{0}$}
+  	  		    		\end{multipleChoice}
+  	  		    	\end{question}
+  	  		    	%----------------------------------------------------------------
+  	  		    	\begin{question} 
+  	  		    		Use the vectors below to compute the following. 
+  	  		    		$$\vec{y} = \begin{bmatrix} 1\\-1\\3\end{bmatrix}, \hspace{20pt} \vec{u}_1 = \begin{bmatrix} 0\\2\\-1\end{bmatrix}, \hspace{10pt} \vec{u}_2 = \begin{bmatrix} 1\\1\\2\end{bmatrix}$$
+  	  		    		
+  	  		    		$\frac{\vec{y}\cdot\vec{u}_1}{\vec{u}_1\cdot\vec{u}_1} =\answer{-1}$ Simplify.\vspace{10pt}\\
+  	  		    		$\frac{\vec{y}\cdot\vec{u}_2}{\vec{u}_2\cdot\vec{u}_2} =\answer{1} $ Simplify. \vspace{10pt}\\
+  	  		    		Compute the othogonal projection of $\vec{y}$ onto $\Span\{\vec{u}_1,\vec{u}_2\}$.\vspace{10pt}\\
+  	  		    		$	\hat{\bf y} = \begin{bmatrix} \answer{1}\\\answer{-1}\\\answer{3}\end{bmatrix}$\vspace{10pt}\\
+  	  		    		Compute $\vec{z}$ such that $\vec{y} = 	\hat{\bf y} +\vec{z}$ and $\vec{z}\in (\Span\{\vec{u}_1,\vec{u}_2\} )^\perp$.\vspace{10pt}\\
+  	  		    		$\vec{z} = \begin{bmatrix} \answer{0}\\\answer{0}\\\answer{0}\end{bmatrix}$
+  	  		    	\end{question}
+  	  		           %----------------------------------------------------------------
+  	  		           	\begin{question} 
+  	  		           		In the previous question, we find that $\vec{y} =	\hat{\bf y}$. That is that the vector is its own orthogonal projection onto $\Span\{\vec{u}_1,\vec{u}_2\}$.  Which of the following statements must be true?
+  	  		           		\begin{multipleChoice}
+  	  		           			\choice[correct] {$\vec{y}$ is in $\Span\{\vec{u}_1,\vec{u}_2\}$.}
+  	  		           			\choice{$\vec{y}$ is {\bf not} in $\Span\{\vec{u}_1,\vec{u}_2\}$.}
+  	  		           			\end{multipleChoice}
+  	  		           	\end{question}
+  	  		           	%----------------------------------------------------------------
+  	  		             \begin{question} 
+  	  		             	Use the vectors below to compute the following. 
+  	  		             	$$\vec{y} = \begin{bmatrix} 3\\2\\5\end{bmatrix}, \hspace{20pt} \vec{u}_1 = \begin{bmatrix} -3\\4\\1\end{bmatrix}, \hspace{10pt} \vec{u}_2 = \begin{bmatrix} 1\\2\\-5\end{bmatrix}$$
+  	  		             	
+  	  		             $\frac{\vec{y}\cdot\vec{u}_1}{\vec{u}_1\cdot\vec{u}_1} =\frac{\answer{2}}{\answer{13}}$ Simplify.\vspace{10pt}\\
+  	  		              $\frac{\vec{y}\cdot\vec{u}_2}{\vec{u}_2\cdot\vec{u}_2} =\frac{\answer{3}}{\answer{5}} $ Simplify. \vspace{10pt}\\
+  	  		              Compute the othogonal projection of $\vec{y}$ onto $\Span\{\vec{u}_1,\vec{u}_2\}$.\vspace{10pt}\\
+  	  		             $	\hat{\bf y} = \frac{1}{65}\begin{bmatrix} \answer{-9}\\\answer{118}\\\answer{-190}\end{bmatrix}$\vspace{10pt}\\
+  	  		             Compute $\vec{z}$ such that $\vec{y} = 	\hat{\bf y} +\vec{z}$ and $\vec{z}\in (\Span\{\vec{u}_1,\vec{u}_2\} )^\perp$.\vspace{10pt}\\
+  	  		           $\vec{z} = \begin{bmatrix} \answer{204}\\\answer{12}\\\answer{515}\end{bmatrix}$\vspace{10pt}\\
+  	  		           
+  	  		           What vector represents the closest point to $\vec{y}$ in $\Span\{\vec{u}_1,\vec{u}_2\}$?\\
+  	  		           
+  	  		           	\begin{multipleChoice}
+  	  		           	\choice[correct]{ $	\hat{\bf y} $  }
+  	  		           	\choice{$\vec{z}$}
+  	  		           	\choice{$\vec{y}$}
+  	  		           	\end{multipleChoice}
+  	  		             \end{question}
+  	  		             %----------------------------------------------------------------
+  \end{document}
