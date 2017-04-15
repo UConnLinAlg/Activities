@@ -1,0 +1,117 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+\newcommand{\RR}{\bf R}
+\newcommand{\adj}{\mathop{\rm adj}}
+\newcommand{\degrees}{$^{\circ}$}
+\newcommand{\Col}{\mathop{\rm Col}}
+\newcommand{\diag}{\mathop{\rm diag}}
+\newcommand{\Inn}{\mathop{\rm Inn}}
+\newcommand{\Nul}{\mathop{\rm Nul}}
+\newcommand{\rank}{\mathop{\rm rank}}
+\newcommand{\rk}{\mathop{\rm rk}}
+\newcommand{\Row}{\mathop{\rm Row}}
+\newcommand{\proj}{\mathop{\rm proj}}
+%% \def Doesn't work with Ximera, MathJax
+%\def\Span{\mathop{\rm Span}}
+\newcommand{\Span}{\mathop{\rm Span}}
+\newcommand{\spec}{\mathop{\rm spec}}
+\newcommand{\tr}{\mathop{\rm tr}}
+\newcommand{\vol}{\mathop{\rm vol}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 6.5  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} 
+  	  		    True/False: If $\hat{x}$ is a least-squares solution of $A\vec{x} = \vec{b}$, then $A\hat{x}$ is a point in the column space of $A$ closest to $\vec{b}$.\\
+  	  		    \begin{multipleChoice}
+  	  		    	\choice[correct]{True}
+  	  		    	\choice{False}
+  	  		    	\end{multipleChoice}
+  	  		    
+  	  		    	\end{question}
+  	  		    	%----------------------------------------------------------------
+  	  		       \begin{question} 
+  	  		    	When does $A\vec{x} = \vec{b}$ have exactly one least-squares solution? Select all that apply.
+  	  		    	\begin{selectAll}
+  	  		    		\choice{When $A$ is $n\times n$.}
+  	  		    		\choice{When $A\vec{x} = \vec{b}$ is consistent.}
+  	  		    		\choice[correct]{When the columns of $A$ are linearly independent.}
+  	  		    		\choice[correct]{When $A\vec{x} = \vec{b}$ is has exactly one solution.}
+  	  		    	\end{selectAll}
+  	  		    	
+  	  		    \end{question}
+  	  		                      %----------------------------------------------------------------
+  	  		                          \begin{question} 
+  	  		                      Let $A = \begin{bmatrix} 4 &1\\0&2\\0&1\end{bmatrix}$ and $\vec{b}= \begin{bmatrix}1\\-1\\2\end{bmatrix}$.\\\\
+  	  		                      \vspace{10pt}\\
+  	  		                      Compute $A^TA$. $A^TA =\begin{bmatrix} \answer{16}& \answer{4}\\\answer{4}& \answer{6}\end{bmatrix}$\vspace{20pt}\\
+  	  		                       Compute $A^T\vec{b}$. $A^T\vec{b} = \begin{bmatrix} \answer{4}\\\answer{1}\end{bmatrix}$\vspace{20pt}\\
+  	  		                      Solve the normal equations $A^TA\vec{x} = A^T\vec{b}$ to determine the set of least-squares solutions.\\
+  	  		                      $$\vec{x} = \begin{bmatrix}1/4\\ \answer{0}\end{bmatrix}$$
+  	  		                      
+  	  		                      Why is there only one least-squares solution?
+  	  		                      
+  	  		                      \begin{multipleChoice}
+  	  		                      	\choice[correct]{Because the columns of $A$ are linearly independent.}
+  	  		                      \choice{Because $A\vec{x} = \vec{b}$ is has exactly one solution.}
+  	  		                      \end{multipleChoice}
+  	  		                      
+  	  		                      	
+  	  		                      \end{question}
+  	  		                      %----------------------------------------------------------------
+  	  		                         \begin{question} 
+  	  		                      	Let $A = \begin{bmatrix} 1 &-1&2\\0&2&0\\0&5&0\end{bmatrix}$ and $\vec{b}= \begin{bmatrix}3\\4\\1\end{bmatrix}$.\\\\
+  	  		                      	\vspace{10pt}\\
+  	  		                      	Compute $A^TA$. $A^TA =\begin{bmatrix} \answer{1}& \answer{-1}&\answer{2}\\\answer{-1}& \answer{30}&\answer{-2}\\\answer{2}&\answer{-2}&\answer{4}\end{bmatrix}$\vspace{20pt}\\
+  	  		                      	Compute $A^T\vec{b}$. $A^T\vec{b} = \begin{bmatrix} \answer{3}\\\answer{10}\\\answer{6}\end{bmatrix}$\vspace{20pt}\\
+  	  		                      	Solve the normal equations $A^TA\vec{x} = A^T\vec{b}$ to determine the set of least-squares solutions.\\
+  	  		                      	$$\vec{x} = x_3\begin{bmatrix}\answer{-2}\\ \answer{0}\\\answer{1}\end{bmatrix}+ \begin{bmatrix}\answer{100}/29\\ \answer{13}/29\\\answer{0}\end{bmatrix}$$
+  	  		                      	
+  	  		                     
+  	  		                      	
+  	  		                      	
+  	  		                      \end{question}
+  	  		                      %----------------------------------------------------------------
+  	  		                         \begin{question} 
+  	  		                      When will the method of solving the normal equations, $A^TA\vec{x} = A^T\vec{b}$, work for finding the least-squares solutions?
+  	  		                      	
+  	  		                      	\begin{multipleChoice}
+  	  		                      		\choice[correct]{Always}
+  	  		                      		\choice{Only when the columns of $A$ are linearly independent.}
+  	  		                      		\choice{Only when the columns of $A$ are orthogonal.}
+  	  		                      	\end{multipleChoice}
+  	  		                      	
+  	  		                      	
+  	  		                      \end{question}
+  	  		                      %----------------------------------------------------------------
+  	  		                        \begin{question} 
+  	  		                      	When will the method of finding the orthogonal projection of $\vec{b}$ work for finding the least-squares solutions?
+  	  		                      	
+  	  		                      	\begin{multipleChoice}
+  	  		                      		\choice{Always}
+  	  		                      		\choice{Only when the columns of $A$ are linearly independent.}
+  	  		                      		\choice[correct]{Only when the columns of $A$ are orthogonal.}
+  	  		                      	\end{multipleChoice}
+  	  		                      	
+  	  		                      \end{question}
+    		                      %----------------------------------------------------------------
+    		                      \begin{question} 
+    		                      	When will the method of usng the $QR$ factorization work for finding the least-squares solutions?
+    		                      	
+    		                      	\begin{multipleChoice}
+    		                      		\choice{Always}
+    		                      		\choice[correct]{Only when the columns of $A$ are linearly independent.}
+    		                      		\choice{Only when the columns of $A$ are orthogonal.}
+    		                      	\end{multipleChoice}
+    		                      	
+    		                      \end{question}
+  \end{document}

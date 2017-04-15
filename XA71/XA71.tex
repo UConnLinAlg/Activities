@@ -1,0 +1,89 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+\newcommand{\RR}{\bf R}
+\newcommand{\adj}{\mathop{\rm adj}}
+\newcommand{\degrees}{$^{\circ}$}
+\newcommand{\Col}{\mathop{\rm Col}}
+\newcommand{\diag}{\mathop{\rm diag}}
+\newcommand{\Inn}{\mathop{\rm Inn}}
+\newcommand{\Nul}{\mathop{\rm Nul}}
+\newcommand{\rank}{\mathop{\rm rank}}
+\newcommand{\rk}{\mathop{\rm rk}}
+\newcommand{\Row}{\mathop{\rm Row}}
+\newcommand{\proj}{\mathop{\rm proj}}
+%% \def Doesn't work with Ximera, MathJax
+%\def\Span{\mathop{\rm Span}}
+\newcommand{\Span}{\mathop{\rm Span}}
+\newcommand{\spec}{\mathop{\rm spec}}
+\newcommand{\tr}{\mathop{\rm tr}}
+\newcommand{\vol}{\mathop{\rm vol}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 7.1  \hfill Math 2210Q} 
+  	  %----------------------------------------------------------------
+  	\begin{question} 
+  		True/False: A matrix $A$ is symmetric if $A = A^T$. 
+  		\begin{multipleChoice}
+  			\choice[correct]{True}
+  			\choice{False}
+  		\end{multipleChoice}
+  		
+  		
+  	\end{question}
+  	%----------------------------------------------------------------
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} 
+  	  		    True/False: A matrix is orthogonal if it has orthogonal columns. 
+  	  		    \begin{multipleChoice}
+  	  		    	\choice{True}
+  	  		    	\choice[correct]{False}
+  	  		    		\end{multipleChoice}
+  	  		    	
+  	  		    	\begin{hint} Consider $A = \begin{bmatrix} 2 &0\\ 0&3\end{bmatrix}$.
+  	  		    		\end{hint}
+  	  		    
+  	  		    
+  	  		    	\end{question}
+  	  		    	%----------------------------------------------------------------
+  	  		       \begin{question} 
+  	  		    	Suppose $A$ is orthogonally diagonalizable with $A=PDP^{-1}$. Which of the following statements must be true?
+  	  		    	\begin{selectAll}
+  	  		    		\choice[correct]{$A$ is symmetric.}
+  	  		    		\choice[correct]{The columns of $P$ are unit vectors.}
+  	  		    		\choice{The columns of $D$ are unit vectors.}
+  	  		    		\choice[correct]{$P^T = P^{-1}$}
+  	  		    	\end{selectAll}
+  	  		    	
+  	  		    \end{question}
+  	  		                      %----------------------------------------------------------------
+  	  		                          \begin{question} 
+  	  		                     Suppose $A$ is a symmetric $5\times 5$ matrix. Which of the following statements could be true?
+  	  		                     \begin{selectAll}
+  	  		                     	\choice{$A$ has less than 5 eigenvalues counting multiplicity.}
+  	  		                     		\choice{$A$ has more than 5 eigenvalues counting multiplicity.}
+  	  		                     \choice[correct]{$A$ has 5 distinct eigenvalues. }
+  	  		                     \choice[correct] {$A$ has 5 eigenvalues counting multiplicity.}
+  	  		                      	\end{selectAll}
+    		                      	
+  	  		                      \end{question}
+  	  		                      %----------------------------------------------------------------
+  	  		                            \begin{question} 
+  	  		                       	True/False: The dimension of an eigenspace of a symmetric matrix equals the multiplicity of the corresponding eigenvalue
+  	  		                       	\begin{multipleChoice}
+  	  		                       	\choice[correct]{True}
+  	  		                       	\choice{False}	
+  	  		                       	\end{multipleChoice}
+  	  		                       	
+  	  		                       \end{question}
+  	  		                       %----------------------------------------------------------------
+    		         
+  \end{document}

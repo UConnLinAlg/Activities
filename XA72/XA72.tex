@@ -1,0 +1,109 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+\newcommand{\RR}{\bf R}
+\newcommand{\adj}{\mathop{\rm adj}}
+\newcommand{\degrees}{$^{\circ}$}
+\newcommand{\Col}{\mathop{\rm Col}}
+\newcommand{\diag}{\mathop{\rm diag}}
+\newcommand{\Inn}{\mathop{\rm Inn}}
+\newcommand{\Nul}{\mathop{\rm Nul}}
+\newcommand{\rank}{\mathop{\rm rank}}
+\newcommand{\rk}{\mathop{\rm rk}}
+\newcommand{\Row}{\mathop{\rm Row}}
+\newcommand{\proj}{\mathop{\rm proj}}
+%% \def Doesn't work with Ximera, MathJax
+%\def\Span{\mathop{\rm Span}}
+\newcommand{\Span}{\mathop{\rm Span}}
+\newcommand{\spec}{\mathop{\rm spec}}
+\newcommand{\tr}{\mathop{\rm tr}}
+\newcommand{\vol}{\mathop{\rm vol}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 7.2  \hfill Math 2210Q} 
+  	
+  		  %----------------------------------------------------------------
+  	\begin{question} 
+  		Compute the quadratic form $Q(\vec{x})= \vec{x}^TA\vec{x}$ given $\vec{x} =\begin{bmatrix}
+  		x_1\\ x_2
+  		\end{bmatrix}$ and $A = \begin{bmatrix} 2&6\\6&1\end{bmatrix}$.\vspace{10pt}\\
+  	
+  		$Q(\vec{x}) = \answer{2}x_1^2 +\answer{1}x_2^2  +\answer{12}x_1x_2 $
+  		
+  		
+  		
+  	\end{question}
+  	  %----------------------------------------------------------------
+  	\begin{question} 
+  		Compute the matrix of the quadratic form:\\ $Q(\vec{x}) = 7x_1^2 +3x_2^2  +8x_1x_2 $. Assume $\vec{x} \in \RR^2$.\vspace{10pt}\\
+  		
+  		$A = \begin{bmatrix} \answer{7} & \answer{4}\\ \answer{4} & \answer{3}\end{bmatrix}$
+  		
+  		
+  	
+  	\end{question}
+  	  %----------------------------------------------------------------
+  \begin{question} 
+  	Compute the matrix of the quadratic form:\\ $Q(\vec{x}) = x_1^2 -x_2^2 +6x_3^2 +4x_1x_2-10x_1x_3 $. Assume $\vec{x} \in \RR^3$.\vspace{10pt}\\
+  	
+  	$A = \begin{bmatrix} \answer{1} & \answer{2}& \answer{-5}\\ \answer{2} & \answer{-1}& \answer{0}\\  \answer{-5}& \answer{0}& \answer{6}\end{bmatrix}$
+  	
+  	
+  	
+  \end{question}
+  	  %----------------------------------------------------------------
+  	\begin{question} 
+  Suppose $P$ orthogonally diagonalizes $A$. Then $A=PDP^{-1}$ for some diagonal matrix $D$. Which of the following is equivalent to $P^TAP$?
+  		\begin{multipleChoice}
+  			\choice[correct]{$D$}
+  			\choice{$PDP^{-1}$}
+  			\choice{$P^TDP$}
+  			\choice{cannot be simplified}
+  		\end{multipleChoice}
+  	  		\vspace{10pt}
+  	\begin{hint} If $P$ orthogonally diagonalizes $A$, then $P$ is an orthogonal matrix which means $P^T=P^{-1}$.\end{hint}
+  	\end{question}
+  	  %----------------------------------------------------------------
+  	\begin{question} 
+  	Suppose $P$ orthogonally diagonalizes $A$.    Substitute $\vec{x} = P\vec{y}$ into the Qudratic form $Q(\vec{x}) = \vec{x}^TA\vec{x}$ and simplify as much as possible. This substitution is called a change of variable.
+  		\begin{multipleChoice}
+  			\choice{$P\vec{y}^TAP\vec{y}$}
+  			\choice[correct]{$\vec{y}^TD\vec{y}$}
+  			\choice{$P^T\vec{y}^TAP\vec{y}$}
+  			\choice{$A\vec{y}$}
+  				\choice{$D\vec{y}$}
+  		\end{multipleChoice}
+  		\vspace{10pt}
+  		\begin{hint}
+  			The previous question might be helpful.
+  			\end{hint}
+  		
+  	\end{question}
+  	%----------------------------------------------------------------
+  		 	\begin{question} 
+ 	  		 	 The orthogonal diagonalization of $A$ is given below.    Substitute the change of variable $\vec{x} = P\vec{y}$ into the Quadratic form $Q(\vec{x}) = \vec{x}^TA\vec{x}$ and give the new quadratic form. 
+  	  		$$A = PDP^{-1} \text{  where  } P = \begin{bmatrix}  -2/3 &-1/3&2/3\\ -2/3&2/3&-1/3\\ 1/3& 2/3& 2/3\end{bmatrix} \text{  and  } D= \begin{bmatrix} 3&0&0\\0&9&0\\0&0&15\end{bmatrix}$$
+  	  		 	\vspace{10pt}
+  	  		 	\begin{hint}
+  	  		 		The previous question might be helpful.
+  	  		 	\end{hint}
+  	  		 		\vspace{10pt}
+  	  		 		
+  	  		 	The new quadratic form is $ \answer{3}y_1^2    +\answer{9}y_2^2+\answer{15}y_3^2           $. Notice that it has no cross product terms. i.e. no $y_iy_j$ where $i\neq j$.
+		 \end{question} 		                       %----------------------------------------------------------------
+  		                       
+  	  		                       
+  	  		                       
+  	  		                       
+  	  		                       
+  	  		                       
+
+  \end{document}
