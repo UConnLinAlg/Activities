@@ -1,0 +1,100 @@
+%%% This is XA73.tex, for Lay Section 7.3
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+\newcommand{\RR}{\bf R}
+\newcommand{\adj}{\mathop{\rm adj}}
+\newcommand{\degrees}{$^{\circ}$}
+\newcommand{\Col}{\mathop{\rm Col}}
+\newcommand{\diag}{\mathop{\rm diag}}
+\newcommand{\Inn}{\mathop{\rm Inn}}
+\newcommand{\Nul}{\mathop{\rm Nul}}
+\newcommand{\rank}{\mathop{\rm rank}}
+\newcommand{\rk}{\mathop{\rm rk}}
+\newcommand{\Row}{\mathop{\rm Row}}
+\newcommand{\proj}{\mathop{\rm proj}}
+%% \def Doesn't work with Ximera, MathJax
+%\def\Span{\mathop{\rm Span}}
+\newcommand{\Span}{\mathop{\rm Span}}
+\newcommand{\spec}{\mathop{\rm spec}}
+\newcommand{\tr}{\mathop{\rm tr}}
+\newcommand{\vol}{\mathop{\rm vol}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 7.3  \hfill Math 2210Q} 
+  	
+  		  %----------------------------------------------------------------
+  	\begin{question} 
+  		Compute the maximum and minimum values attained by the quadratic form
+		$Q(\vec{x})= \vec{x}^TA\vec{x}$, where $A = \begin{bmatrix}
+		-2&4\\4&4\end{bmatrix}$ subject to the constraint $\vec{x}\vec{x}^{T} = 1$,
+		and determine a unit vector where each extremum is attained.  
+\vspace{10pt}\\
+  	 
+\textbf{Maximum = } \answer{6} is attained at $\vec{u} = \frac{1}{\sqrt{\answer{5}}}\begin{bmatrix}
+\answer{1} \\  \answer{2}\end{bmatrix}$\\
+\textbf{Minimum = } \answer{-4} is attained at $\vec{v}= \frac{1}{\sqrt{\answer{5}}}\begin{bmatrix}
+\answer{2} \\  \answer{-1}
+\end{bmatrix}$
+\\ 
+  		
+
+  		
+  	\end{question}
+  	  %----------------------------------------------------------------
+  	\begin{question} 
+  		Find the maximum value for the quadratic form corresponding to the matrix
+		$A$ and the vector $\vec{u}$ you computed above, subject to
+		$\vec{x}\vec{x}^{T}=1$ and $\vec{x}^{T}\vec{u}=0$. 
+
+\textbf{Maximum = } \answer{-4} is attained at $\vec{v}= \frac{1}{\sqrt{\answer{5}}}\begin{bmatrix}
+\answer{2} \\  \answer{-1}
+\end{bmatrix}$
+\\ 
+		
+    	
+  	\end{question}
+  	  %----------------------------------------------------------------
+  	\begin{question} 
+  		Find the maximum value for the quadratic form:\\ $Q(\vec{x}) = 7x_1^2
+		+3x_2^2  +8x_1x_2 $, subject to $\| \vec{x}\| =1$. 
+
+\textbf{Maximum = } $\answer{5}+\answer{2}\sqrt{\answer{5}}$.  
+\\ 
+		
+ 	
+  	\end{question}
+
+
+ \begin{question}  
+ Given the orthogonal diagonalization of $A$ below: 
+$$A = PDP^{-1} \text{  where  } P = \begin{bmatrix}  -2/3
+		&-1/3&2/3\\ -2/3&2/3&-1/3\\ 1/3& 2/3& 2/3\end{bmatrix} \text{  and
+		} D= \begin{bmatrix} 3&0&0\\0&9&0\\0&0&15\end{bmatrix}$$, 
+
+Find the unit vector $\vec{u}$ at which the quadratic form $Q(\vec{x}) =
+\vec{x}^{T}A\vec{x}$ attains its maximum subject to $\| x\| = 1$.  Then find the unit vector
+$\vec{v}$ at which $Q$ attains its maximum subject to both $\| x\| =1$ and $\vec{x}\cdot
+\vec{u}=0$. 
+
+$\vec{u} = \frac{1}{\answer{3}} \begin{bmatrix} \answer{2}\\ \answer{-1}\\ \answer{2} \end{bmatrix} 
+\qquad 
+\vec{v} = \frac{1}{\answer{3}} \begin{bmatrix} \answer{-1}\\ \answer{2}\\ \answer{2} \end{bmatrix}$. 
+  	  		 		
+ \end{question} 		                       
+%----------------------------------------------------------------
+  		                       
+  	  		                       
+  	  		                       
+  	  		                       
+  	  		                       
+  	  		                       
+
+  \end{document}
