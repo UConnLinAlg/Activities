@@ -1,0 +1,93 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+\newcommand{\bu}{{\bf u}}
+\newcommand{\bv}{{\bf v}}
+\newcommand{\bb}{{\bf b}}
+\newcommand{\ba}{{\bf a}}
+\newcommand{\bx}{{\bf x}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{E-8 \& E-9  \hfill Math 2210Q} 
+
+  	
+  
+  	%-----------------------------------------------------------------------------	
+ 
+
+  	 	\begin{question}
+  
+  	Compute te product: $	\begin{bmatrix}
+  			-1 &1\\2&-4\\0 &-3
+  		\end{bmatrix} \begin{bmatrix}
+  		1 \\2
+  		\end{bmatrix}$.
+  		
+  		Answer:$ \left[\begin{array}{c}
+  	\answer{1}\\\answer{-6}\\ \answer{-6}
+  		\end{array}\right]$
+  	
+  		\end{question}
+  		
+  		\begin{question} Write the vector equation below as a matrix equation.\\
+  	$$x_1\begin{bmatrix}
+  	3\\4\\1
+  	\end{bmatrix} +x_2 \begin{bmatrix}
+  	-1\\0\\6
+  	\end{bmatrix}+x_3\begin{bmatrix}
+  -7\\1\\2
+  	\end{bmatrix} =\begin{bmatrix}
+  2\\3\\-1
+  	\end{bmatrix}$$
+  	
+  	Answer: $\left[ \begin{array}{ccc} \answer{3} & \answer{-1} & \answer{-7} \\
+  	\answer{4} & \answer{0} & \answer{1} \\ \answer{1} & \answer{6} & \answer{2} \\ \end{array} \right] \begin{bmatrix} x_1\\ x_2\\ x_3 \end{bmatrix} = \left[ \begin{array}{c} \answer{2}\\ \answer{3}\\ \answer{-1} \end{array} \right]$
+  	
+  		
+  	\end{question}
+  	
+  	
+  	\begin{question} Is the product  $\begin{bmatrix} 7\\8\\9\end{bmatrix}\begin{bmatrix} 1\\-5 \end{bmatrix}$ defined?
+  
+  		
+  	\begin{multipleChoice}
+  		\choice{defined}
+  		\choice[correct]{undefined}
+  		\end{multipleChoice}
+  			
+  			\end{question}
+  			
+  			 	\begin{question}Is the product  $\begin{bmatrix} 7 &8&9\end{bmatrix}\begin{bmatrix} 1\\-5\\2 \end{bmatrix}$ defined?
+  			 		
+  			 		
+  			 		\begin{multipleChoice}
+  			 			\choice[correct]{defined}
+  			 			\choice{undefined}
+  			 		\end{multipleChoice}
+  			 		
+  			 		
+  			 	\end{question}
+  	
+  	%-----------------------------------------------------------------------------
+  	
+  	\begin{question}
+  True or False. If $\bb$ is a linear combination of the columns of $A$, then the equation $A\bx = \bb$ has a solution.
+  		
+  		
+  		\begin{multipleChoice}
+  			\choice[correct]{True}
+  			\choice{False}
+  		\end{multipleChoice}
+  		
+  	\end{question}
+  	
+  	%-----------------------------------------------------------------------------
+  
+  \end{document}

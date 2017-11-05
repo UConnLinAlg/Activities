@@ -1,0 +1,92 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+\newcommand{\bu}{{\bf u}}
+\newcommand{\bv}{{\bf v}}
+\newcommand{\bb}{{\bf b}}
+\newcommand{\ba}{{\bf a}}
+\newcommand{\bx}{{\bf x}}
+\newcommand{\bp}{{\bf p}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{E-9 \& E-10 \hfill Math 2210Q} 
+
+  	
+  
+  	%-----------------------------------------------------------------------------	
+ 
+
+  	 	\begin{question}
+  
+  The linear system associated to the augmented matrix below is consistent.\\
+  $$\begin{amatrix}{3}
+  a&b&c &0\\
+  d&e&f&0\\
+  g &h&i&0
+  \end{amatrix}$$
+  
+  \begin{multipleChoice}
+  	\choice[correct]{True}
+  	\choice{False}
+  	\end{multipleChoice}
+  	
+  		\end{question}
+  		
+  		\begin{question} Given the RREF augmented matrix below, write the solution to the associated system in parametric vector form.\\
+  	$$\begin{amatrix}{3}
+  	1&0&9&-8\\
+  	0&1&-4&5
+  	\end{amatrix}$$
+  	
+  	Answer: $\bx = \left[ \begin{array}{c} \answer{-8} \\ \answer{5} \\ \answer{0}  \end{array} \right] +x_3  \left[ \begin{array}{c} \answer{-9}\\ \answer{4}\\ \answer{1} \end{array} \right]$
+  	
+  		
+  	\end{question}
+  	
+  	%------------------------------------------------------------
+  	\begin{question} A system of linear equations is called {\bf homogeneous} if it can be written in the form $\dots$
+  		
+  		\begin{multipleChoice}
+  			\choice[correct] {$A\bx= {\bf 0}$}
+  			\choice{A\bx=\bb}
+  			\end{multipleChoice}
+  			
+  			\end{question}
+  	
+  	 	%------------------------------------------------------------
+  	\begin{question} You are given a homogeneous system with no free variables. How many solutions does it have?
+  
+  		
+  	\begin{multipleChoice}
+  		\choice{none}
+  		\choice[correct]{one}
+  		\choice{infinitely many}
+  			\choice{not enough information to know}
+  		\end{multipleChoice}
+  			
+  			\end{question}
+  			
+  		
+  	%-----------------------------------------------------------------------------
+  	\begin{question}Geometrically, the parametric vector form of a solution $\bx = \bp + t\bv$  represents:
+  		
+  		
+  		\begin{multipleChoice}
+  			\choice{a line through the origin parallel to $\bp$.}
+  			\choice{a line through the origin parallel to $\bv$.}
+  			\choice{a line through $\bv$ parallel to $\bp$.}
+  			\choice[correct]{a line through $\bp$ parallel to $\bv$.}
+  			\choice{a plane through $\bp$ and $\bv$.}
+  		\end{multipleChoice}
+  		
+  	\end{question}
+  	
+  		%-----------------------------------------------------------------------------
+  \end{document}

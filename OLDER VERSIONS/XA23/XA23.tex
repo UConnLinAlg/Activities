@@ -1,0 +1,77 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 2.3  \hfill Math 2210Q} 
+
+  	
+  
+  	%-----------------------------------------------------------------------------	
+ \underline{The Invertible Matrix Theorem:} Let $A$ be a square $n \times n$ matrix. Then the following statements are equivalent.
+ \begin{enumerate}
+ 	\item $A$ is an invertible matrix.
+ 	\item $A$ is row equivalent to the $n \times n$ identity matrix.
+ 	\item $A$ has $n$ pivot positions.
+ 	\item The equation $A\vec{x} = \vec{0}$ has only the trivial solution.
+ 	\item The columns of $A$ form a linearly independent set.
+ 	\item The linear transformation $\vec{x} \mapsto A\vec{x}$ is one-to-one.
+ 	\item The equation $A\vec{x} = \vec{b}$ has at least one solution for each $\vec{b}$ in $\RR^n$.
+ 	\item The columns of $A$ span $\RR^n$.
+ 	\item The linear transformation $\vec{x} \mapsto A\vec{x}$maps $\RR^n$ onto $\RR^n$.
+ 	\item There is an $n \times n$ matrix $C$ such that $CA =I$.
+ 	\item There is an $n\times n$ matrix $D$ such that $AD = I$.
+ 	\item $A^T$ is an invertible matrix.
+ \end{enumerate}
+ 
+ 
+	\begin{question} Determine if the matrices below are invertible.\\
+		
+		A square matrix that is row equivalent to $I_8$.\\
+		
+		\begin{multipleChoice}
+			\choice[correct]{Invertible}
+			\choice{Not Invertible}
+			\end{multipleChoice}
+			
+	$A = \begin{bmatrix} 1& 2& 0  \\ 0& 3& -1\\ 0&0&4 \end{bmatrix}$.\\
+	
+	\begin{multipleChoice}
+		\choice[correct]{Invertible}
+		\choice{Not Invertible}
+	\end{multipleChoice}
+	
+$A = \begin{bmatrix} 1& 8& 0 &5 \\ 0& 6& 0&3\\ 0&0&1& 1 \end{bmatrix}$.\\
+	
+	\begin{multipleChoice}
+		\choice{Invertible}
+		\choice[correct]{Not Invertible}
+	\end{multipleChoice}
+	
+$A = \begin{bmatrix} 1& 8& 0 &5 \\ 0& 6& 0&3\\ 0&0&1& 1 \\ 0&0&0&0 \end{bmatrix}$.\\
+	
+	\begin{multipleChoice}
+		\choice{Invertible}
+		\choice[correct]{Not Invertible}
+	\end{multipleChoice}				
+					
+					
+		$A = \begin{bmatrix} 5& 0& 0  \\ -3& -7& 0\\ 8&5&-1 \end{bmatrix}$. (Hint: $A$ is not in echelon form)\\
+		
+		\begin{multipleChoice}
+			\choice[correct]{Invertible}
+			\choice{Not Invertible}
+		\end{multipleChoice}				
+  		
+  		\end{question}
+  \end{document}

@@ -1,0 +1,70 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 4.3  \hfill Math 2210Q} 
+  %----------------------------------------------------------------
+  \begin{question} True/False: Any set that is a basis for a vector space $V$ is also a linearly independent set.
+  			
+  			\begin{multipleChoice}
+  				\choice[correct]{True}
+  				\choice{False}
+  			\end{multipleChoice}
+  			
+  		\end{question}	
+  		  %----------------------------------------------------------------
+  		  \begin{question} True/False: Any linearly independent set that is a subset of $V$ is a basis for $V$.
+  		  	
+  		  	\begin{multipleChoice}
+  		  		\choice{True}
+  		  		\choice[correct]{False}
+  		  	\end{multipleChoice}
+  		  	
+  		  \end{question}	
+  		   %----------------------------------------------------------------
+  		   \begin{question} True/False: If the $\Span\{\vec{b}_1,\dots,\vec{b}_p\}$ is equal to some vector space $V$, then $\{\vec{b}_1,\dots,\vec{b}_p\}$ is a basis for $V$.
+  		   	
+  		   	\begin{multipleChoice}
+  		   		\choice{True}
+  		   		\choice[correct]{False}
+  		   	\end{multipleChoice}
+  		   	
+  		   \end{question}	
+  	  %----------------------------------------------------------------
+  	  \begin{question} True/False: The pivot columns of $A$ form a basis for $\Col A$.
+  	  	
+  	  	\begin{multipleChoice}
+  	  		\choice[correct]{True}
+  	  		\choice{False}
+  	  	\end{multipleChoice}
+  	  	
+  	  \end{question}
+  	   %----------------------------------------------------------------
+  	   \begin{question} True/False: Suppose the matrix  $A $ below is row equivalent to the matrices $U_1$ and $U_2$ below. Which of the following statements is true?
+  	   	$$A= \begin{bmatrix}2 & 6& 4 &7\\ -2& 3&-4&2\\-6&0&-12&-8\end{bmatrix}
+  	   	\hspace{20pt} 
+  	   	U_1 = \begin{bmatrix}2 & 0 & 4 &3\\ 0& 3&0&2\\0&0&0&1\end{bmatrix} \hspace{20pt}U_2= \begin{bmatrix}1 & 0 & 2 &0\\ 0& 1&0&0\\0&0&0&1\end{bmatrix}$$
+  	   	\begin{multipleChoice}
+  	   		\choice{ $\left\{ \begin{bmatrix} 2\\0\\0 \end{bmatrix}, \begin{bmatrix} 0\\3\\0 \end{bmatrix}, \begin{bmatrix} 3\\2\\1 \end{bmatrix}\right\}$ forms a basis for $\Col A$.}
+  	   			\choice{ $\left\{ \begin{bmatrix} 1\\0\\0 \end{bmatrix}, \begin{bmatrix} 0\\1\\0 \end{bmatrix}, \begin{bmatrix} 0\\0\\1 \end{bmatrix}\right\}$ forms a basis for $\Col A$.}
+  	   				\choice[correct]{ $\left\{ \begin{bmatrix} 2\\-2\\-6 \end{bmatrix}, \begin{bmatrix} 6\\3\\0 \end{bmatrix}, \begin{bmatrix} 7\\2\\-8 \end{bmatrix}\right\}$ forms a basis for $\Col A$.}
+  	   	\end{multipleChoice}
+  	   	
+  	   \end{question}	
+     
+  \end{document}

@@ -1,0 +1,112 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+\def\Nul{\mathop{\rm Nul}}
+\def\Col{\mathop{\rm Col}}
+\def\adj{\mathop{\rm adj}}
+\def\Span{\mathop{\rm Span}}
+\def\dim{\mathop{\rm dim}}
+\def\rank{\mathop{\rm rank}}
+\def\proj{\mathop{\rm proj}}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 6.2  \hfill Math 2210Q} 
+  	  		    %----------------------------------------------------------------
+  	  		    \begin{question} True/False: The set of vectors, $\left\{  \begin{bmatrix} 2\\1\\3\end{bmatrix},  \begin{bmatrix} -1\\1\\-5\end{bmatrix},  \begin{bmatrix} 0\\-4\\3\end{bmatrix}    \right  \}$ is orthogonal.\\
+  	  		    	
+  	  		    	\begin{multipleChoice}
+  	  		    		\choice{True}
+  	  		    		\choice[correct]{False}
+  	  		    		\end{multipleChoice}
+  	  		    		
+  	  		    		\begin{hint} Two vectors are orthogonal iff their dot product is zero. \end{hint}
+  	  		    	
+  	  		    \end{question}	
+  	  		    %----------------------------------------------------------------
+  	  		      \begin{question} True/False: The set of vectors, $\left\{  \begin{bmatrix} 1\\1\\-2\end{bmatrix},  \begin{bmatrix} 2\\0\\1\end{bmatrix},  \begin{bmatrix} 1\\-5\\-2\end{bmatrix}     \right \}$ is orthogonal.\\
+  	  		      	
+  	  		      	\begin{multipleChoice}
+  	  		      		\choice[correct]{True}
+  	  		      		\choice{False}
+  	  		      	\end{multipleChoice}
+  	  		      	
+  	  		      	\begin{hint} Two vectors are orthogonal if and only if their dot product is zero. \end{hint}
+  	  		      	
+  	  		      \end{question}	
+  	  		      %----------------------------------------------------------------
+  	  		      \begin{question} True/False: An orthogonal basis for a subspace $W$ of $\RR^n$ is a basis for $W$ that is also an orthogonal set.
+  	  		      	
+  	  		      	\begin{multipleChoice}
+  	  		      		\choice[correct]{True}
+  	  		      		\choice{False}
+  	  		      	\end{multipleChoice}
+  	  		      	
+  	  		      	
+  	  		      \end{question}	
+  	  		      %----------------------------------------------------------------
+  	  		 \begin{question} 
+  	  		 If $\{\vec{u}_1,\vec{u}_2,\vec{u}_3\}$ is a basis for $\RR^3$, then for any $\vec{w}$ in $\RR^3$, $\vec{w}$ can be written as a linear combination of $\vec{u}_1,\vec{u}_2,\vec{u}_3$. Given the vectors $\vec{w},\vec{u}_1,\vec{u}_2$ and $\vec{u}_3$ below, compute the coefficients in the linear combination.\\
+  	  		 	
+  	  		 $$\vec{w} =\begin{bmatrix} 1\\2\\3\end{bmatrix}, \hspace{10pt} 
+\vec{u}_1 =\begin{bmatrix} 3\\-3\\0\end{bmatrix}, \hspace{10pt} 
+\vec{u_2} =\begin{bmatrix} 2\\2\\-1\end{bmatrix}, \hspace{10pt} 
+\vec{u}_3 =\begin{bmatrix} 1\\1\\4\end{bmatrix}$$
+\vspace{10pt}\\
+$\vec{w} =- \frac{\answer{1}}{\answer{6}}\vec{u}_1  	 + \frac{\answer{1}}{\answer{3}}\vec{u}_2+ \frac{\answer{5}}{\answer{6}}\vec{u}_3$. \hspace{10pt}	 (Simplify fractions as much as possible.)
+
+\begin{hint}
+	$c_j = \frac{\vec{w}\cdot \vec{u}_j}{\vec{u}_j\cdot\vec{u}_j}$
+	\end{hint}	 	
+  	  		 \end{question}	
+  	  		 %----------------------------------------------------------------
+  	  		 \begin{question} Let $\vec{y} = \begin{bmatrix} 7\\2\end{bmatrix}$ and $\vec{u} = \begin{bmatrix}
+  	  		 	-1\\6\end{bmatrix}$. Find the orthogonal projection of $\vec{y}$ onto $\vec{u}$.\\
+  	  		 	
+  	  		 	First, find $\vec{y}\cdot\vec{u} = \answer{5}$, then find $\vec{u}\cdot\vec{u} = \answer{37}$.\\
+  	  		 	
+  	  		 	Then the orthogonal projection of $\vec{y}$ onto $\vec{u}$ is ${\proj}_L\vec{y} = \begin{bmatrix} -\answer{5}/\answer{37} \\\answer{30}/\answer{37} \end{bmatrix}$.\\
+  	  		 	
+  	  		 	\begin{hint}
+  	  		 	Let $L$ be the line through $\vec{u}$ and $\vec{0}$. The orthogonal projection of $\vec{y}$ onto $\vec{u}$ (or the orthogonal projection of $\vec{y}$ onto $L$ ) is ${\proj}_L\vec{y} = \left(\frac{\vec{y}\cdot\vec{u}}{\vec{u}\cdot\vec{u}}\right)\vec{u}$ 
+  	  		 		\end{hint}
+  	  		 	
+  	  		 	\end{question}
+  	  		      %----------------------------------------------------------------
+  	  		       \begin{question}True/False: Not every orthogonal set in $\RR^n$ is linearly independent.\\
+  	  		       	 	\begin{multipleChoice}
+  	  		       	 		\choice[correct]{True}
+  	  		       	 		\choice{False}
+  	  		       	 	\end{multipleChoice}
+  	  		       	
+  	  		       	\end{question}
+  	  		       %----------------------------------------------------------------
+  	  		          \begin{question}True/False: Every orthogonal set of non-zero vectors in $\RR^n$ is linearly independent.\\
+  	  		          	\begin{multipleChoice}
+  	  		          		\choice[correct]{True}
+  	  		          		\choice{False}
+  	  		          	\end{multipleChoice}
+  	  		          	
+  	  		          \end{question}
+  	  		          %----------------------------------------------------------------
+  	  		           \begin{question}What is the definition of an orthonormal set?\\
+  	  		           	\begin{multipleChoice}
+  	  		           		\choice{An orthogonal set that is linearly independent}
+  	  		           		\choice{An orthogonal basis}
+  	  		           			\choice{A basis consisting only of unit vectors}
+  	  		           			\choice{An orthogonal basis consisting only of unit vectors}
+  	  		           			\choice[correct]{An orthogonal set consisting only of unit vectors }
+  	  		           	\end{multipleChoice}
+  	  		           	
+  	  		           \end{question}
+  	  		           %----------------------------------------------------------------
+  \end{document}

@@ -1,0 +1,95 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 1.9  \hfill Math 2210Q} 
+
+  	
+  
+  	%-----------------------------------------------------------------------------	
+ 
+	\begin{question}
+		Suppose $T$ is a linear transformation defined by $T(\vec{x}) = A\vec{x}$ and $T\left(\begin{bmatrix} x\\ y \end{bmatrix}\right) = A\begin{bmatrix} x\\ y \end{bmatrix} =\begin{bmatrix} 4x+7y \\ 8y \\ 2x-y \end{bmatrix}$. Then the standard matrix $A$ for this linear transformation is:\\
+		
+		$A = \left[\begin{array}{cc} \answer{4} & \answer{7} \\\answer{0} &\answer{8} \\ \answer{2} &\answer{-1} \end{array}\right]$
+	\end{question}
+	
+
+  		
+  		%-----------------------------------------------------------------------------	
+  		\begin{question}
+  	A mapping $T: \RR^n \to \RR^m$ is said to be onto $\RR^m$ if each $\vec{b}$ in $\RR^m$ is the image of at least one $\vec{x}$ in $\RR^n$. Decide which of the following transformations is onto.\\
+  	
+  	$T(\vec{x}) = A\vec{x}$ where $A = \begin{bmatrix} 1&0\\ 0 &1 \end{bmatrix}$\\
+  	
+  	\begin{multipleChoice}
+  	\choice[correct]{onto}
+  	\choice{not onto}
+  	\end{multipleChoice}
+  	
+  	  	$T(\vec{x}) = A\vec{x}$ where $A = \begin{bmatrix} 1&0&2\\ 0 &1 &3 \end{bmatrix}$\\
+  	  	
+  	  	\begin{multipleChoice}
+  	  		\choice[correct]{onto}
+  	  		\choice{not onto}
+  	  	\end{multipleChoice}
+  			
+  			
+  			  	$T(\vec{x}) = A\vec{x}$ where $A = \begin{bmatrix} 2&1\\ 0 &3 \\ 0&0 \end{bmatrix}$\\
+  			  	
+  			  	\begin{multipleChoice}
+  			  		\choice{onto}
+  			  		\choice[correct]{not onto}
+  			  	\end{multipleChoice}
+  			\end{question}
+  				%-----------------------------------------------------------------------------	
+  				\begin{question} True/False: Let $T: \RR^n \to \RR^m$ be a linear transformation. Then $T$ is one-to-one if and only if the equation $T(\vec{x}) =\vec{0}$ has only the trivial solution.
+  					
+  					\begin{multipleChoice}
+  						\choice[correct]{True}
+  						\choice{False}
+  					\end{multipleChoice}
+  					
+  					\end{question}
+  			%----------------------------------------------------------------------------
+  			
+  			\begin{question}
+  			Decide which of the following transformations is one-to-one. (Hint: Use the true/false statement above.)\\
+  				
+  				$T(\vec{x}) = A\vec{x}$ where $A = \begin{bmatrix} 1&0\\ 0 &1 \end{bmatrix}$\\
+  				
+  				\begin{multipleChoice}
+  					\choice[correct]{one-to-one}
+  					\choice{not one-to-one}
+  				\end{multipleChoice}
+  				
+  				$T(\vec{x}) = A\vec{x}$ where $A = \begin{bmatrix} 1&0&2\\ 0 &1 &3 \end{bmatrix}$\\
+  				
+  				\begin{multipleChoice}
+  				\choice{one-to-one}
+  				\choice[correct]{not one-to-one}
+  				\end{multipleChoice}
+  				
+  				
+  				$T(\vec{x}) = A\vec{x}$ where $A = \begin{bmatrix} 2&1\\ 0 &3 \\ 0&0 \end{bmatrix}$\\
+  				
+  				\begin{multipleChoice}
+  					\choice[correct]{one-to-one}
+  					\choice{not one-to-one}
+  				\end{multipleChoice}
+  				
+  			\end{question}
+  
+  		
+  \end{document}

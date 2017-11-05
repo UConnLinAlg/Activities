@@ -1,0 +1,77 @@
+
+  \documentclass{ximera}
+% augmented matrix
+\newenvironment{amatrix}[1]{%
+	\left[\begin{array}{@{}*{#1}{c}|c@{}}
+	}{%
+\end{array}\right]
+}
+
+
+%\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\RR}{\bf R}
+
+%  \input{preamble.tex}
+  \begin{document}
+  	\title{Lay 3.1  \hfill Math 2210Q} 
+
+  %----------------------------------------------------------------
+  \begin{question} True/False: If $A$ is a triangular matrix, then $\det A$ is the sum of the entries on the main diagonal of $A$.
+  	
+  	\begin{multipleChoice}
+  		\choice{True}
+  		\choice[correct]{False}
+  		\end{multipleChoice}
+  	
+  	\end{question}	
+  	 %----------------------------------------------------------------
+    \begin{question} True/False: $\det \begin{bmatrix} 1& 0&0 \\ 3 &-3 &0 \\ 2&-2&5 \end{bmatrix} = -15$\\
+    	
+    	\begin{multipleChoice}
+    		\choice[correct]{True}
+    		\choice{False}
+    	\end{multipleChoice}
+    	
+    \end{question}	
+    	 %----------------------------------------------------------------
+    	 \begin{question} We will compute the determinant of $A = \begin{bmatrix} 1& 4&3 \\ 0 &1 &-2 \\ 2&3& 0\end{bmatrix}$ by filling in the blanks below. \\
+    	 	
+    	 	We use a cofactor expansion down the first column. (We could also do the cofactor expansion across the second row, third row, or down the third column and it would be the same amount of work.)
+    	 	
+    	 $\left|\begin{array}{ccc} 1&4 &3 \\ 0 &1 &-2 \\ 2&3& 0\end{array}\right| = 1\left|\begin{array}{ccc} \answer{1}&  \answer{-2}\\  \answer{3} & \answer{0}  \end{array}\right| 
+    	 -0\left|\begin{array}{ccc} \answer{4}&  \answer{3}\\  \answer{3} & \answer{0}  \end{array}\right| 
+    	  +2\left|\begin{array}{ccc} \answer{4}&  \answer{3}\\  \answer{1} & \answer{-2}  \end{array}\right| $	\vspace{10pt}\\
+    	  $\left|\begin{array}{ccc} 1&4 &3 \\ 0 &1 &-2 \\ 2&3& 0\end{array}\right| = 1(\answer{6}) -0 + 2(\answer{-11}) =\answer{-16}$
+    	 	
+    	 	
+    	 \end{question}	
+    	 
+    	  	 %----------------------------------------------------------------
+    	  	 \begin{question} We will compute the determinant of $A = \begin{bmatrix} 1& 4&3 \\ 0 &1 &-2 \\ 2&3& 0\end{bmatrix}$ by filling in the blanks below. \\
+    	  	 	
+    	  	 	This time use a cofactor expansion across the second row. \\
+    	  	 	
+    	  	 	$\left|\begin{array}{ccc} 1&4 &3 \\ 0 &1 &-2 \\ 2&3& 0\end{array}\right| = \answer{0}
+    	  	 	+\answer{1}\left|\begin{array}{ccc} \answer{1}&  \answer{3}\\  \answer{2} & \answer{0}  \end{array}\right| 
+    	  	 	-\answer{-2}\left|\begin{array}{ccc} \answer{1}&  \answer{4}\\  \answer{2} & \answer{3}  \end{array}\right| $	\vspace{10pt}\\
+    	  	 	$\left|\begin{array}{ccc} 1&4 &3 \\ 0 &1 &-2 \\ 2&3& 0\end{array}\right| = 0 + 1(\answer{-6}) + 2(\answer{-5}) =\answer{-16}$
+    	  	 \end{question}	
+    	  	 
+    	  	   	  	 %----------------------------------------------------------------
+    	  	   	  	 \begin{question} Fill in the missing signs ($-,+$) in the cofactor expansions below.\\
+    	  	   	  	 
+    	  	   	  	 	Down the second column:
+    	  	   	  	 	$\left|\begin{array}{ccc} a&b &c \\ d &e &f \\ g&h& i\end{array}\right| =
+    	  	   	  	 	\answer{-}b\left| \begin{matrix} d&f\\ g&i \end{matrix}\right|
+    	  	   	  	 	\answer{+} e\left| \begin{matrix} a&c\\ g&i \end{matrix}\right|
+    	  	   	  	 	\answer{-}h\left| \begin{matrix} a&c\\ d&f \end{matrix}\right|$\\
+    	  	   	  	 	
+    	  	   	  	 	Across the third row:
+    	  	   	  	 	$\left|\begin{array}{ccc} a&b &c \\ d &e &f \\ g&h& i\end{array}\right| =
+    	  	   	  	 	\answer{+}g\left| \begin{matrix} b&c\\ e&f \end{matrix}\right|
+    	  	   	  	 	\answer{-} h\left| \begin{matrix} a&c\\ d&f \end{matrix}\right|
+    	  	   	  	 	\answer{+}i\left| \begin{matrix} a&b\\ d&e \end{matrix}\right|$
+    	  	   	  	 	
+    	  	   	  	 	
+    	  	   	  	 \end{question}	
+  \end{document}
